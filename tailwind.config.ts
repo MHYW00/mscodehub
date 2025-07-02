@@ -14,6 +14,65 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '475px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+        // Mobile-first responsive breakpoints
+        'mobile': {'max': '640px'},
+        'tablet': {'min': '641px', 'max': '1024px'},
+        'desktop': {'min': '1025px'},
+        // Touch device detection
+        'touch': {'raw': '(pointer: coarse)'},
+        'no-touch': {'raw': '(pointer: fine)'},
+        // High DPI screens
+        'retina': {'raw': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)'},
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
+        // Mobile-specific spacing
+        'mobile-x': '1rem',
+        'mobile-y': '1.5rem',
+        'safe-top': 'env(safe-area-inset-top)',
+        'safe-bottom': 'env(safe-area-inset-bottom)',
+        'safe-left': 'env(safe-area-inset-left)',
+        'safe-right': 'env(safe-area-inset-right)',
+      },
+      fontSize: {
+        'xs': ['0.75rem', { lineHeight: '1rem' }],
+        'sm': ['0.875rem', { lineHeight: '1.25rem' }],
+        'base': ['1rem', { lineHeight: '1.5rem' }],
+        'lg': ['1.125rem', { lineHeight: '1.75rem' }],
+        'xl': ['1.25rem', { lineHeight: '1.75rem' }],
+        '2xl': ['1.5rem', { lineHeight: '2rem' }],
+        '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+        '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
+        '5xl': ['3rem', { lineHeight: '1' }],
+        '6xl': ['3.75rem', { lineHeight: '1' }],
+        '7xl': ['4.5rem', { lineHeight: '1' }],
+        '8xl': ['6rem', { lineHeight: '1' }],
+        '9xl': ['8rem', { lineHeight: '1' }],
+        // Mobile-optimized font sizes
+        'mobile-xs': ['0.75rem', { lineHeight: '1.25rem' }],
+        'mobile-sm': ['0.875rem', { lineHeight: '1.375rem' }],
+        'mobile-base': ['1rem', { lineHeight: '1.5rem' }],
+        'mobile-lg': ['1.125rem', { lineHeight: '1.625rem' }],
+        'mobile-xl': ['1.25rem', { lineHeight: '1.75rem' }],
+        'mobile-2xl': ['1.5rem', { lineHeight: '2rem' }],
+        'mobile-3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+      },
+      minHeight: {
+        'screen-mobile': 'calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))',
+        'touch-target': '44px',
+      },
+      minWidth: {
+        'touch-target': '44px',
+      },
       colors: {
         primary: {
           50: '#f0f9ff',
@@ -63,6 +122,11 @@ const config: Config = {
         'pulse-slow': 'pulse 3s infinite',
         'float': 'float 6s ease-in-out infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
+        // Mobile-specific animations
+        'slide-in-right': 'slideInRight 0.3s ease-out',
+        'slide-out-right': 'slideOutRight 0.3s ease-in',
+        'fade-in-up': 'fadeInUp 0.6s ease-out',
+        'scale-in': 'scaleIn 0.3s ease-out',
       },
       keyframes: {
         fadeIn: {
@@ -81,9 +145,32 @@ const config: Config = {
           '0%': { boxShadow: '0 0 5px rgba(59, 130, 246, 0.5)' },
           '100%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.8)' },
         },
+        slideInRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideOutRight: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(100%)', opacity: '0' },
+        },
+        fadeInUp: {
+          '0%': { transform: 'translateY(30px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        scaleIn: {
+          '0%': { transform: 'scale(0.9)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
       },
       backdropBlur: {
         xs: '2px',
+      },
+      zIndex: {
+        '60': '60',
+        '70': '70',
+        '80': '80',
+        '90': '90',
+        '100': '100',
       },
     },
   },

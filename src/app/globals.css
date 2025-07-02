@@ -191,43 +191,47 @@
   }
 }
 
-/* Mobile-first optimizations */
+/* Enhanced Mobile-first optimizations */
 @media (max-width: 640px) {
   body {
     font-size: max(16px, var(--font-size-base)); /* Prevent zoom on iOS */
   }
   
   /* Ensure tap targets are at least 44px */
-  button, a, input, select, textarea, [role="button"] {
-    min-height: 44px;
-    min-width: 44px;
+  button, a[role="button"], .mobile-button {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 12px 16px;
   }
   
-  /* Improve text readability on mobile */
+  /* Better spacing for mobile */
   h1 {
-    font-size: clamp(1.75rem, 8vw, 3rem);
+    font-size: 2rem !important; /* 32px */
     line-height: 1.2;
+    margin-bottom: 1rem;
   }
   
   h2 {
-    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    font-size: 1.5rem !important; /* 24px */
     line-height: 1.3;
+    margin-bottom: 0.75rem;
   }
   
   h3 {
-    font-size: clamp(1.25rem, 4vw, 2rem);
+    font-size: 1.25rem !important; /* 20px */
     line-height: 1.4;
+    margin-bottom: 0.5rem;
   }
   
-  /* Better button spacing on mobile */
+  /* Mobile button spacing */
   .mobile-button-spacing > * + * {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
   }
   
-  /* Responsive padding utilities */
+  /* Mobile-friendly padding */
   .mobile-px {
-    padding-left: max(1rem, env(safe-area-inset-left));
-    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   
   .mobile-py {
@@ -235,68 +239,69 @@
     padding-bottom: 1rem;
   }
   
+  /* Form elements optimization */
   input, select, textarea {
-    font-size: max(16px, var(--font-size-base)); /* Prevent zoom on focus */
-  }
-  
-  /* Larger touch targets on mobile */
-  button, a[role="button"], input[type="button"], input[type="submit"] {
+    font-size: 16px !important; /* Prevent zoom on iOS */
     min-height: 48px;
-    min-width: 48px;
-    padding: 12px 16px;
   }
   
-  /* Better spacing for mobile */
+  /* Better link areas */
+  button, a[role="button"], input[type="button"], input[type="submit"] {
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  
+  /* Container adjustments */
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
   
-  /* Prevent horizontal scroll on very small screens */
+  /* Prevent text overflow */
   * {
-    max-width: 100%;
     word-wrap: break-word;
-    overflow-wrap: break-word;
+    hyphens: auto;
   }
   
-  /* Better button spacing on mobile */
+  /* Better mobile spacing */
   .mobile-button-spacing > * + * {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
   }
   
-  /* Mobile-specific text sizes */
+  /* Mobile typography scale */
   h1 {
-    font-size: clamp(2rem, 8vw, 4rem) !important;
+    font-size: clamp(1.75rem, 5vw, 2.5rem) !important;
   }
   
   h2 {
-    font-size: clamp(1.5rem, 6vw, 2.5rem) !important;
+    font-size: clamp(1.375rem, 4vw, 1.875rem) !important;
   }
   
   h3 {
-    font-size: clamp(1.25rem, 5vw, 1.875rem) !important;
+    font-size: clamp(1.125rem, 3.5vw, 1.5rem) !important;
   }
   
-  /* Better grid gaps on mobile */
+  /* Grid optimizations */
   .grid {
     gap: 1rem !important;
   }
   
-  /* Mobile-friendly padding */
+  /* Mobile padding classes */
   .mobile-px {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
   
   .mobile-py {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
   }
 }
 
-/* Touch-friendly hover states */
+/* Enhanced Hover effects for different devices */
 @media (hover: hover) and (pointer: fine) {
-  /* Only apply hover effects on devices that support true hover */
+  /* Desktop hover effects */
   .hover\:scale-105:hover {
     transform: scale(1.05);
   }
@@ -306,7 +311,7 @@
   }
 }
 
-/* Touch devices - use active states instead of hover */
+/* Touch device optimizations */
 @media (hover: none) and (pointer: coarse) {
   .hover\:scale-105:active {
     transform: scale(1.02);
@@ -316,7 +321,7 @@
     background-color: rgb(55 65 81);
   }
   
-  /* Touch-friendly interactions */
+  /* Touch feedback */
   .group:active .group-hover\:scale-105 {
     transform: scale(1.02);
   }
@@ -325,14 +330,12 @@
     opacity: 0.05;
   }
   
-  /* Card touch feedback */
+  /* Touch-friendly hover replacements */
   .hover\:border-gray-600\/50:active {
     border-color: rgb(75 85 99 / 0.5);
   }
   
-  /* Button touch feedback */
   .hover\:from-blue-700:active {
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
     --tw-gradient-from: rgb(29 78 216);
   }
   
@@ -341,13 +344,13 @@
   }
 }
 
-/* Loading states */
+/* Accessibility animations */
 @keyframes pulse-accessibility {
   0%, 100% {
     opacity: 1;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 
@@ -355,64 +358,69 @@
   animation: pulse-accessibility 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Scroll to top button animations */
+/* Custom animations for mobile */
 @keyframes rocket-launch {
   0% {
     transform: translateY(0) rotate(0deg);
+    opacity: 1;
   }
   25% {
-    transform: translateY(-5px) rotate(-5deg);
+    transform: translateY(-20px) rotate(-5deg);
+    opacity: 0.9;
   }
   50% {
-    transform: translateY(-10px) rotate(5deg);
+    transform: translateY(-40px) rotate(5deg);
+    opacity: 0.8;
   }
   75% {
-    transform: translateY(-5px) rotate(-2deg);
+    transform: translateY(-60px) rotate(-2deg);
+    opacity: 0.7;
   }
   100% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
   }
 }
 
 @keyframes flame-flicker {
   0%, 100% {
-    transform: scaleY(1) scaleX(1);
     opacity: 0.8;
+    transform: scaleY(1);
   }
   50% {
-    transform: scaleY(1.2) scaleX(0.8);
     opacity: 1;
+    transform: scaleY(1.1);
   }
 }
 
 @keyframes sparkle {
   0% {
-    transform: scale(0) rotate(0deg);
     opacity: 0;
+    transform: scale(0) rotate(0deg);
   }
   50% {
-    transform: scale(1) rotate(180deg);
     opacity: 1;
+    transform: scale(1) rotate(180deg);
   }
   100% {
-    transform: scale(0) rotate(360deg);
     opacity: 0;
+    transform: scale(0) rotate(360deg);
   }
 }
 
 .rocket-launch {
-  animation: rocket-launch var(--animation-duration-slow) ease-in-out;
+  animation: rocket-launch 2s ease-out forwards;
 }
 
 .flame-flicker {
-  animation: flame-flicker var(--animation-duration-normal) ease-in-out infinite;
+  animation: flame-flicker 0.3s ease-in-out infinite;
 }
 
 .sparkle {
   animation: sparkle 1s ease-in-out infinite;
 }
 
-/* Custom animations */
+/* Enhanced mobile animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -425,7 +433,7 @@
 }
 
 .animate-fade-in {
-  animation: fade-in var(--animation-duration-slow) ease-out;
+  animation: fade-in 0.6s ease-out;
 }
 
 /* Custom scrollbar */
@@ -434,46 +442,45 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e293b;
+  background: rgb(31 41 55);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #475569;
+  background: rgb(75 85 99);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: rgb(107 114 128);
 }
 
-/* Firefox scrollbar */
+/* General improvements */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: #475569 #1e293b;
+  scroll-behavior: smooth;
 }
 
-/* Line clamping utility */
+/* Text utilities */
 .line-clamp-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .line-clamp-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 /* Print styles */
 @media print {
   * {
-    background: transparent !important;
     color: black !important;
-    box-shadow: none !important;
+    background: white !important;
     text-shadow: none !important;
+    box-shadow: none !important;
   }
   
   a, a:visited {
@@ -494,6 +501,7 @@
   }
 }
 
+/* Base styles */
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -504,7 +512,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-/* Utility classes for mobile optimization */
+/* Touch optimization */
 .touch-pan-x {
   touch-action: pan-x;
 }
@@ -534,7 +542,7 @@ body {
   padding-left: var(--sal);
 }
 
-/* Viewport height utilities */
+/* Mobile viewport fixes */
 .h-screen-mobile {
   height: calc(var(--vh, 1vh) * 100);
 }
@@ -543,30 +551,30 @@ body {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
-/* Advanced mobile optimizations */
+/* Mobile scroll optimization */
 .mobile-scroll {
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
 }
 
 .mobile-scroll::-webkit-scrollbar {
-  display: none;
+  display: none; /* Hide scrollbar on mobile */
 }
 
-/* Image optimization for mobile */
+/* Responsive images */
 .responsive-image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 0.5rem;
+  loading: lazy;
 }
 
-/* Mobile-friendly grid */
+/* Mobile grid improvements */
 .mobile-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 @media (max-width: 640px) {
@@ -576,19 +584,19 @@ body {
   }
 }
 
-/* Typography improvements for mobile */
+/* Enhanced mobile text */
 .mobile-text {
-  font-size: clamp(0.875rem, 4vw, 1rem);
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .mobile-title {
-  font-size: clamp(1.25rem, 6vw, 2rem);
-  line-height: 1.3;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.2;
   font-weight: 700;
 }
 
-/* Performance optimization classes */
+/* Performance optimizations */
 .will-change-transform {
   will-change: transform;
 }
@@ -597,53 +605,51 @@ body {
   will-change: auto;
 }
 
-/* Focus improvements for mobile accessibility */
+/* Focus improvements for mobile */
 @media (max-width: 640px) {
   *:focus-visible {
     outline: 3px solid #3b82f6;
-    outline-offset: 3px;
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 }
 
-/* Core Web Vitals Optimizations */
-/* Largest Contentful Paint (LCP) optimizations */
+/* Optimize images for mobile */
 .hero-image, .featured-image, .logo {
-  content-visibility: auto;
-  contain-intrinsic-size: 300px;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
 }
 
-/* First Input Delay (FID) optimizations */
+/* Enhanced touch targets */
 button, a, input, textarea, select {
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(59, 130, 246, 0.3);
 }
 
-/* Cumulative Layout Shift (CLS) optimizations */
+/* Responsive media */
 img, video, iframe {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  aspect-ratio: attr(width) / attr(height);
 }
 
+/* Loading states */
 .skeleton-loader {
-  background: linear-gradient(
-    90deg,
-    #1f2937 25%, 
-    #374151 50%, 
-    #1f2937 75%
+  background: linear-gradient(90deg, 
+    rgba(255,255,255,0.1) 0%, 
+    rgba(255,255,255,0.2) 50%, 
+    rgba(255,255,255,0.1) 100%
   );
-  background-size: 200% 100%;
-  animation: skeleton-loading 1.5s infinite;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  animation: skeleton-loading 1.5s ease-in-out infinite;
 }
 
 @keyframes skeleton-loading {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
 }
 
-/* Preloading optimizations */
+/* Resource loading optimization */
 .critical-resource {
-  font-display: swap;
   loading: eager;
 }
 
@@ -652,17 +658,17 @@ img, video, iframe {
   decoding: async;
 }
 
-/* Advanced Mobile Performance */
+/* Mobile performance classes */
 .mobile-optimized {
-  transform: translateZ(0);
+  transform: translateZ(0); /* Force GPU acceleration */
   backface-visibility: hidden;
-  perspective: 1000px;
+  perspective: 1000;
 }
 
-/* Intersection Observer optimization */
+/* Progressive enhancement */
 .fade-in-observed {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -671,19 +677,19 @@ img, video, iframe {
   transform: translateY(0);
 }
 
-/* GPU Acceleration for animations */
+/* GPU acceleration for smooth animations */
 .gpu-accelerated {
-  will-change: transform, opacity;
   transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
 }
 
-/* Memory efficient animations */
+/* Efficient animation classes */
 .efficient-animation {
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
 }
 
-/* Reduced motion support */
+/* Reduced motion fallbacks */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -693,18 +699,20 @@ img, video, iframe {
   }
 }
 
-/* Dark mode performance optimization */
+/* Dark mode enhancements */
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
   }
 }
 
-/* High contrast mode support */
+/* High contrast mode improvements */
 @media (prefers-contrast: high) {
   .gradient-text {
-    background: none;
-    color: #ffffff;
+    background: none !important;
+    color: currentColor !important;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 }
 
@@ -718,18 +726,18 @@ img, video, iframe {
     background: white !important;
     color: black !important;
     box-shadow: none !important;
+    border: 1px solid black !important;
   }
 }
 
-/* Memory management for large lists */
+/* Virtual scrolling support */
 .virtual-scroll {
   contain: layout style paint;
-  content-visibility: auto;
 }
 
-/* Efficient focus management */
+/* Focus management */
 .focus-trap {
-  contain: layout;
+  isolation: isolate;
 }
 
 .focus-visible:focus {
@@ -737,9 +745,8 @@ img, video, iframe {
   outline-offset: 2px;
 }
 
-/* Critical CSS inlining support */
+/* Critical above-the-fold optimizations */
 .critical-above-fold {
-  contain: layout paint;
-  content-visibility: auto;
-  contain-intrinsic-size: 0 500px;
+  contain: layout style paint;
+  will-change: auto;
 } 
