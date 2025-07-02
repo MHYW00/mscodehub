@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     domains: ['images.unsplash.com', 'via.placeholder.com'],
+    unoptimized: true
   },
   // CSS optimizasyonları
   experimental: {
@@ -50,10 +51,19 @@ const nextConfig = {
   },
   // Strict mode
   reactStrictMode: true,
-  // TypeScript type checking'i geçici olarak devre dışı bırak (dil dosyalarında duplicated property hataları var)
+  // TypeScript derleme hatalarını geçici olarak yoksay
+  // Çeviri dosyalarındaki tip uyumsuzlukları nedeniyle
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: true
   },
+  eslint: {
+    // Üretim derlemesi sırasında ESLint kontrolünü atla
+    ignoreDuringBuilds: false
+  },
+  // Statik sayfa üretimi
+  trailingSlash: false,
+  // Çıktı konfigürasyonu
+  output: 'standalone'
 }
 
 module.exports = nextConfig 
