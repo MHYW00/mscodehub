@@ -106,6 +106,12 @@ export const en = {
       message: 'Message',
       submit: 'Send'
     },
+    location: {
+      title: 'Location',
+      subtitle: 'Remote Service',
+      city: 'Turkey & Worldwide',
+      description: 'We serve clients worldwide with our 100% remote working model'
+    },
     services: {
       local: {
         title: 'On-site Service',
@@ -325,85 +331,6 @@ export const en = {
       button: 'Get In Touch'
     }
   },
-  contact: {
-    methods: {
-      whatsapp: {
-        title: 'WhatsApp',
-        description: 'For quick communication'
-      },
-      email: {
-        title: 'Email',
-        description: 'For detailed information'
-      },
-      location: {
-        title: 'Location',
-        description: 'Our office address'
-      },
-      phone: {
-        title: 'Phone',
-        description: 'Direct communication'
-      },
-      hours: {
-        title: 'Working Hours',
-        description: '09:00 - 18:00'
-      }
-    },
-    page: {
-      cta: {
-        title: 'Let\'s Discuss Your Project',
-        subtitle: 'Contact us today to turn your dream project into reality'
-      }
-    },
-    stats: {
-      response: '24 Hour Response',
-      secure: 'Secure Communication',
-      consultation: 'Free Consultation',
-      support: '24/7 Support'
-    },
-    channels: {
-      title: 'Communication Channels',
-      subtitle: 'Choose the most suitable method for you'
-    },
-    form: {
-      detailedTitle: 'Detailed Project Form',
-      detailedSubtitle: 'Tell us about your project, let us prepare a custom proposal',
-      name: 'Full Name',
-      placeholder: {
-        name: 'Your name and surname',
-        email: 'Your email address',
-        company: 'Your company name (optional)',
-        projectType: 'Website, mobile app, e-commerce...',
-        budget: 'Your budget range',
-        message: 'Project details and special requests...'
-      },
-      email: 'Email',
-      company: 'Company',
-      projectType: 'Project Type',
-      budget: 'Budget',
-      message: 'Project Details',
-      submit: 'Send Project Request'
-    },
-    location: {
-      title: 'Location',
-      subtitle: 'Remote Service',
-      city: 'Turkey & Worldwide',
-      description: 'We serve clients worldwide with our 100% remote working model'
-    },
-          services: {
-        local: {
-          title: 'Online Meetings',
-          description: 'Project discussions via video conferencing'
-        },
-        remote: {
-          title: 'Remote Development',
-          description: 'Complete remote code development and support'
-        },
-        flexible: {
-          title: 'Global Access',
-          description: '24/7 accessible service worldwide'
-        }
-      }
-  },
   cta: {
     title: 'Let\'s Bring Your Project to Life',
     description: 'We are with you on your digital transformation journey. Contact us for free consultation.',
@@ -440,8 +367,11 @@ export const en = {
             ]
           },
           scope: {
-            title: '2.2 Service Scope',
-            description: 'The details, scope and pricing of our services are determined on a project basis and confirmed with written agreements.'
+            title: '2.2 Detailed Service Scope and Process',
+            description: 'The details, scope, pricing and delivery times of our services are customized according to customer needs and confirmed with written contracts.',
+            process: 'Service Process: Needs analysis → Proposal preparation → Contract signing → Project development → Testing and acceptance → Delivery and training → Warranty and support',
+            quality: 'Quality Standards: ISO 9001 quality management system, agile methodology, continuous integration/deployment (CI/CD), code review processes',
+            delivery: 'Delivery Conditions: Phased delivery according to determined milestones, transition to next phase with customer approval, change request process for modification requests'
           }
         },
         responsibilities: {
@@ -478,22 +408,42 @@ export const en = {
           }
         },
         consumer: {
-          title: '5. Consumer Rights',
+          title: '5. Comprehensive Consumer Rights and Protection',
+          intro: 'Your rights under Law No. 6502 on Consumer Protection and related legislation:',
           withdrawal: {
-            title: '5.1 Right of Withdrawal',
-            description: 'In accordance with Law No. 6502 on Consumer Protection, consumers have the right to withdraw within 14 days in distance contracts. However, customized software is excluded from the right of withdrawal.'
+            title: '5.1 Right of Withdrawal (14 Days)',
+            description: 'In distance contracts, you have the right to withdraw within 14 days without stating any reason and without paying any penalty. The right of withdrawal starts from the date the contract is established.',
+            exceptions: 'Exceptions to the right of withdrawal: Software produced specifically for the person, projects specially prepared upon the consumer\'s request, development processes that have been started.',
+            process: 'It is sufficient to notify the withdrawal in writing or by e-mail (metehan@mscodehub.com). The amounts you paid will be refunded within 14 days at the latest.'
           },
           warranty: {
-            title: '5.2 Warranty Conditions',
+            title: '5.2 Detailed Warranty Conditions',
             items: [
-              'The delivered software complies with the features specified in the contract',
-              'Fixing programming errors detected within 3 months after delivery',
-              'Closing security vulnerabilities within a reasonable time'
+              'Functional Warranty: Full compliance of delivered software with all features specified in the contract (12 months)',
+              'Bug Fix Warranty: Free fixing of programming errors detected within 6 months after delivery',
+              'Security Warranty: Closing security vulnerabilities within 72 hours from the date of detection',
+              'Performance Warranty: Compliance with specified performance criteria (loading speed, response time)',
+              'Compatibility Warranty: Specified browser, operating system and device compatibility',
+              'Data Integrity: Full recovery guarantee in case of data loss (if backups are available)',
+              'Uninterrupted Service: 99.5% uptime guarantee, excluding planned maintenance'
+            ]
+          },
+          rights: {
+            title: '5.3 Additional Consumer Rights',
+            items: [
+              'Free Cancellation: Right to completely free cancellation if service has not started',
+              'Request for Change: Right to request reasonable changes within the project scope',
+              'Second Opinion: Right to get independent expert opinion on technical matters',
+              'Transparency: Right to receive regular information about project progress',
+              'Data Portability: Right to receive all codes and data at the end of the project',
+              'Training and Documentation: Right to receive user manual and basic training'
             ]
           },
           complaints: {
-            title: '5.3 Complaints and Appeals',
-            description: 'You can send your complaints about our services to metehan@mscodehub.com. For unresolved disputes, you can apply to Consumer Arbitration Committees and Consumer Courts.'
+            title: '5.4 Complaint and Dispute Resolution Methods',
+            description: 'Please send your complaints about our services to metehan@mscodehub.com first. A written response will be given within 15 business days.',
+            escalation: 'If No Solution Found: Consumer Arbitration Committees (within monetary limits), Consumer Courts, Consumer Protection Directorate of the Ministry of Trade of the Republic of Turkey.',
+            alternative: 'Alternative Solutions: You can use mediation, arbitration, online dispute resolution platforms (ODR).'
           }
         },
         dataProtection: {
@@ -516,12 +466,16 @@ export const en = {
       lawNote: 'Under the General Data Protection Regulation',
       sections: {
         controller: {
-          title: '1. Data Controller',
-          company: 'MSCodeHub',
-          address: 'Rize, Turkey',
-          email: 'metehan@mscodehub.com',
+          title: '1. Data Controller Identity and Contact Information',
+          company: 'MSCodeHub Information Technologies',
+          address: 'Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize/Turkey',
+          email: 'metehan@mscodehub.com (GDPR Contact Address)',
           phone: '+90 543 123 4567',
-          description: 'In accordance with the General Data Protection Regulation ("GDPR"), your personal data is processed by MSCodeHub within the scope described below.'
+          website: 'www.mscodehub.com',
+          registration: 'Trade Registry No: [To be filled in the future]',
+          taxNumber: 'Tax No: [To be filled in the future]',
+          mersisNo: 'MERSIS No: [To be filled in the future]',
+          description: 'In accordance with Law No. 6698 on the Protection of Personal Data ("GDPR"), your personal data is processed by MSCodeHub Information Technologies ("Data Controller") within the scope, legal bases and security measures described below. This information text is the notification made to data subjects in accordance with Article 10 of the GDPR.'
         },
         dataTypes: {
           title: '2. Personal Data Being Processed',
@@ -704,12 +658,16 @@ export const en = {
           }
         },
         contactInfo: {
-          title: '9. Contact',
-          description: 'For your questions about GDPR:',
-          controller: 'Data Controller: MSCodeHub',
-          email: 'metehan@mscodehub.com',
-          phone: '+90 543 123 4567',
-          address: 'Rize, Turkey'
+          title: '10. Data Controller and Contact Information',
+          description: 'For all kinds of questions, opinions and suggestions regarding this Privacy Policy, you can contact us:',
+          company: 'MSCodeHub Information Technologies',
+          address: 'Address: Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize',
+          email: 'Email: metehan@mscodehub.com (GDPR Contact)',
+          phone: 'Phone: +90 543 123 4567',
+          website: 'Website: www.mscodehub.com',
+          responseTime: 'Application response time: Maximum 30 days',
+          dpo: 'Data Protection Officer: Mete Han Yıldırım',
+          workingHours: 'Working Hours: Monday-Friday 09:00-18:00'
         }
       }
     },

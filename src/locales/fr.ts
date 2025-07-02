@@ -352,12 +352,16 @@ export const fr = {
       lawNote: 'Sous le Règlement Général sur la Protection des Données',
       sections: {
         controller: {
-          title: '1. Responsable du Traitement',
-          company: 'MSCodeHub',
-          address: 'Rize, Turquie',
-          email: 'metehan@mscodehub.com',
+          title: '1. Identité du Responsable du Traitement et Informations de Contact',
+          company: 'MSCodeHub Technologies de l\'Information',
+          address: 'Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize/Turquie',
+          email: 'metehan@mscodehub.com (Adresse de Contact RGPD)',
           phone: '+90 543 123 4567',
-          description: 'Conformément au Règlement Général sur la Protection des Données ("RGPD"), vos données personnelles sont traitées par MSCodeHub dans le cadre décrit ci-dessous.'
+          website: 'www.mscodehub.com',
+          registration: 'Numéro d\'Enregistrement Commercial: [À remplir à l\'avenir]',
+          taxNumber: 'Numéro de Taxe: [À remplir à l\'avenir]',
+          mersisNo: 'Numéro MERSIS: [À remplir à l\'avenir]',
+          description: 'Conformément à la Loi n° 6698 sur la Protection des Données Personnelles ("RGPD"), vos données personnelles sont traitées par MSCodeHub Technologies de l\'Information ("Responsable du Traitement") dans le cadre, les bases légales et les mesures de sécurité décrits ci-dessous. Ce texte d\'information est la notification faite aux personnes concernées conformément à l\'Article 10 du RGPD.'
         },
         dataTypes: {
           title: '2. Données Personnelles Traitées',
@@ -389,11 +393,11 @@ export const fr = {
           security: { title: 'Sécurité', items: ['Sécurité du système', 'Prévention de la fraude', 'Gestion des risques', 'Audit interne'] }
         },
         legalBasis: { title: '4. Base Légale pour le Traitement', items: [{ title: 'Établissement ou exécution de contrat', description: 'Conclusion et exécution de contrats de service' }] },
-        transfer: { title: '5. Transfert de Données Personnelles', domestic: { title: '5.1 Transfert Domestique', items: ['Aux institutions publiques en raison d\'obligations légales'] }, international: { title: '5.2 Transfert International', description: 'Vos données peuvent être transférées vers des pays avec un niveau de protection adéquat.' } },
+        transfer: { title: '5. Transfert de Données Personnelles', domestic: { title: '5.1 Transfert Domestique', items: ['Aux institutions publiques en raison d\'obligations légales', 'Entreprises de services (hébergement, services cloud, etc.)', 'Entreprises fournissant des services de comptabilité et de conseil juridique', 'Entreprises fournissant des services d\'analyse et de reporting'] }, international: { title: '5.2 Transfert International', description: 'Vos données personnelles peuvent être transférées vers des pays avec un niveau de protection adéquat ou vers des prestataires de services dans des pays tiers sous réserve de garanties appropriées.', note: 'Important: Les transferts internationaux ne sont effectués qu\'en conformité avec le RGPD et avec les garanties nécessaires.' } },
         rights: { title: '6. Vos Droits en tant que Personne Concernée', intro: 'Vos droits selon l\'Article 11 du RGPD:', list: [{ title: 'Droit à l\'Information', description: 'Savoir si vos données sont traitées' }] },
-        application: { title: '7. Méthode d\'Application', contact: { title: 'Informations de Contact', email: 'metehan@mscodehub.com' }, note: 'Vos demandes sont évaluées dans les 30 jours.' },
+        application: { title: '7. Méthode d\'Application', contact: { title: 'Informations de Contact', email: 'metehan@mscodehub.com', address: 'MSCodeHub, Rize, Turquie', subject: 'Demande de Personne Concernée RGPD' }, note: 'Vos demandes sont évaluées dans les 30 jours.' },
         security: { title: '8. Sécurité des Données', intro: 'Mesures techniques et administratives:', technical: { title: 'Mesures Techniques', items: ['Chiffrement SSL/TLS'] }, administrative: { title: 'Mesures Administratives', items: ['Autorisations d\'accès'] } },
-        contactInfo: { title: '9. Contact', description: 'Pour vos questions sur RGPD:', controller: 'Responsable du Traitement: MSCodeHub', email: 'metehan@mscodehub.com', phone: '+90 543 123 4567', address: 'Rize, Turquie' }
+        contactInfo: { title: '10. Responsable du Traitement et Informations de Contact', description: 'Pour toutes sortes de questions, opinions et suggestions concernant cette Politique de Confidentialité, vous pouvez nous contacter:', company: 'MSCodeHub Technologies de l\'Information', address: 'Adresse: Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize', email: 'Email: metehan@mscodehub.com (Contact RGPD)', phone: 'Téléphone: +90 543 123 4567', website: 'Site web: www.mscodehub.com', responseTime: 'Temps de réponse aux demandes: Maximum 30 jours', dpo: 'Délégué à la Protection des Données: Mete Han Yıldırım', workingHours: 'Heures de Travail: Lundi-Vendredi 09:00-18:00' }
       }
     },
     terms: {
@@ -403,13 +407,13 @@ export const fr = {
       backHome: 'Retour à l\'accueil',
       sections: {
         general: { title: '1. Dispositions Générales', content: 'Ces conditions d\'utilisation s\'appliquent à tous les services offerts par MSCodeHub.' },
-        services: { title: '2. Nos Services', offered: { title: '2.1 Services Offerts', items: ['Développement web', 'E-commerce', 'Applications mobiles', 'Développement API'] }, scope: { title: '2.2 Portée', description: 'Services complets de développement web' } },
-        responsibilities: { title: '3. Responsabilités de l\'Utilisateur', user: { title: '3.1 Vos Responsabilités', items: ['Fournir des informations correctes', 'Paiement en temps voulu'] }, prohibited: { title: '3.2 Activités Interdites', items: ['Utilisation illégale', 'Dommages système'] } },
-        intellectual: { title: '4. Propriété Intellectuelle', ownership: { title: '4.1 Droits de Propriété', description: 'Les travaux originaux restent notre propriété' }, license: { title: '4.2 Licence', description: 'Licence d\'utilisation non-exclusive après paiement' } },
-        consumer: { title: '5. Droits des Consommateurs', withdrawal: { title: '5.1 Droit de Rétractation', description: 'Droit de rétractation de 14 jours pour les consommateurs' }, conditions: { title: '5.2 Conditions', items: ['Ne s\'applique pas aux services sur mesure', 'Remboursement sous 14 jours'] } },
-        dataProtection: { title: '6. Protection des Données', compliance: { title: '6.1 Conformité RGPD', description: 'Conformité complète au RGPD' }, rights: { title: '6.2 Vos Droits', description: 'Accès, rectification, suppression de vos données' } },
-        legal: { title: '7. Droit Applicable', jurisdiction: { title: '7.1 Juridiction', description: 'Droit français, tribunaux de Rize, Turquie' }, modifications: { title: '7.2 Modifications', description: 'Droit de modifier les conditions' } },
-        effective: { title: '8. Entrée en Vigueur', date: { title: '8.1 Date d\'Effectivité', description: 'Valide à partir du 1er janvier 2024' } }
+        services: { title: '2. Nos Services', offered: { title: '2.1 Services Offerts', items: ['Développement web', 'E-commerce', 'Applications mobiles', 'Développement API'] }, scope: { title: '2.2 Portée Détaillée du Service et Processus', description: 'Les détails, la portée, les prix et les délais de livraison de nos services sont personnalisés selon les besoins du client et confirmés avec des contrats écrits.', process: 'Processus de Service: Analyse des besoins → Préparation de proposition → Signature de contrat → Développement de projet → Tests et acceptation → Livraison et formation → Garantie et support', quality: 'Standards de Qualité: Système de management qualité ISO 9001, méthodologie agile, intégration/déploiement continu (CI/CD), processus de révision de code', delivery: 'Conditions de Livraison: Livraison par phases selon les jalons déterminés, transition vers la phase suivante avec approbation client, processus de demande de changement pour les modifications' } },
+        responsibilities: { title: '3. Responsabilités de l\'Utilisateur', acceptable: { title: '3.1 Utilisation Acceptable', items: ['Fournir des informations correctes', 'Paiement en temps voulu', 'Respecter les lois', 'Communication respectueuse'] }, prohibited: { title: '3.2 Activités Interdites', items: ['Utilisation illégale', 'Dommages système', 'Distribuer des malwares', 'Violation de droits d\'auteur'] } },
+        intellectual: { title: '4. Propriété Intellectuelle', company: { title: '4.1 Propriété de l\'Entreprise', description: 'Tout le contenu, designs et codes sur notre site web sont la propriété de MSCodeHub' }, projects: { title: '4.2 Propriété des Projets', description: 'Les droits sur les projets développés sont transférés selon l\'accord de projet' } },
+        consumer: { title: '5. Droits Complets des Consommateurs et Protection', intro: 'Vos droits conformément à la Loi n° 6502 sur la Protection des Consommateurs et la législation pertinente:', withdrawal: { title: '5.1 Droit de Rétractation (14 jours)', description: 'Dans les contrats à distance, vous avez le droit de vous rétracter sans donner de raisons et sans pénalité dans les 14 jours.', exceptions: 'Exceptions du droit de rétractation: Logiciels produits individuellement, projets spécialement préparés à la demande du consommateur, processus de développement commencés.', process: 'La notification de rétractation peut être faite par écrit ou par e-mail (metehan@mscodehub.com). Les montants payés sont remboursés au plus tard dans les 14 jours.' }, warranty: { title: '5.2 Conditions de Garantie Détaillées', items: ['Garantie fonctionnelle: Conformité complète du logiciel livré à toutes les fonctionnalités spécifiées dans le contrat (12 mois)', 'Garantie de correction d\'erreurs: Correction gratuite des erreurs de programmation détectées dans les 6 mois après livraison', 'Garantie de sécurité: Fermeture des vulnérabilités de sécurité dans les 72 heures après détection'] }, rights: { title: '5.3 Droits Supplémentaires des Consommateurs', items: ['Annulation gratuite: Droit d\'annulation entièrement gratuit si le service n\'a pas encore commencé', 'Demandes de modifications: Droit de demander des modifications raisonnables dans la portée du projet', 'Second avis: Droit à un avis d\'expert indépendant sur les questions techniques'] }, complaints: { title: '5.4 Procédures de Plaintes et Résolution de Conflits', description: 'Veuillez d\'abord adresser vos plaintes concernant nos services à metehan@mscodehub.com. Une réponse écrite sera donnée dans les 15 jours ouvrables.', escalation: 'Si aucune solution: Commissions d\'arbitrage des consommateurs, Tribunaux des consommateurs, Ministère de la Protection des Consommateurs de la République de Turquie.', alternative: 'Solution alternative: Médiation, arbitrage, plateformes de résolution de conflits en ligne (ODR).' } },
+        dataProtection: { title: '6. Protection des Données Personnelles', description: 'Le traitement de vos données personnelles est détaillé dans notre Politique de Confidentialité conformément au RGPD.\n\nEn acceptant ces conditions, vous consentez au traitement de vos données personnelles dans le cadre du RGPD.' },
+        law: { title: '7. Droit Applicable et Juridiction', description: 'Le droit turc s\'applique à la résolution des litiges découlant de ce contrat. Les litiges sont d\'abord tentés d\'être résolus par des négociations amicales.\n\nDans les cas où aucune solution ne peut être trouvée, les tribunaux et directions d\'exécution de Rize sont compétents. Dans les transactions de consommateurs, les tribunaux du lieu de résidence du consommateur ou du lieu de la transaction de consommateur sont compétents.' },
+        effective: { title: '8. Entrée en Vigueur et Modifications', description: 'Ces conditions d\'utilisation entrent en vigueur à la date de publication. Les modifications des conditions sont annoncées sur notre site web et les nouvelles conditions entrent en vigueur à partir de la date de publication.\n\nContinuer à utiliser le site après les modifications signifie que vous acceptez les nouvelles conditions.' }
       }
     },
     privacy: {
@@ -421,7 +425,35 @@ export const fr = {
         intro: {
           title: '1. Introduction',
           content: 'En tant que MSCodeHub ("Société", "nous", "notre"), nous sommes conscients de nos responsabilités envers vous concernant la protection des données personnelles. Cette Politique de Confidentialité a été préparée conformément à la Loi sur la Protection des Données Personnelles n° 6698 ("KVKK"), à la Loi n° 6563 sur la Réglementation du Commerce Électronique, à la Loi n° 6502 sur la Protection des Consommateurs et à d\'autres législations pertinentes de la République de Turquie.'
-        }
+        },
+        dataCollected: {
+          title: '2. Données personnelles collectées',
+          direct: {
+            title: '2.1 Données collectées directement',
+            items: [
+              'Nom, prénom et informations de contact (email, téléphone)',
+              'Informations sur l\'entreprise/organisation et nom commercial',
+              'Demandes de projets et exigences techniques',
+              'Informations que vous partagez via les formulaires de contact'
+            ]
+          },
+          automatic: {
+            title: '2.2 Données collectées automatiquement',
+            items: [
+              'Adresse IP et informations de localisation',
+              'Type de navigateur, version et paramètres de langue',
+              'Pages visitées et temps passé',
+              'Informations collectées via les cookies'
+            ]
+          }
+        },
+        dataUsage: { title: '3. Utilisation des données', purposes: { title: 'Objectifs', items: ['Fourniture de services', 'Amélioration du service', 'Communication client'] }, legalBasis: { title: 'Base légale', items: [{ title: 'Contrat', description: 'Exécution des obligations contractuelles' }, { title: 'Consentement', description: 'Consentement explicite de l\'utilisateur' }] } },
+        dataSharing: { title: '4. Partage de données', intro: 'Nous ne partageons les données que lorsque c\'est nécessaire', conditions: ['Exigences légales', 'Fournisseurs de services', 'Partenaires commerciaux'] },
+        dataSecurity: { title: '5. Sécurité des données', intro: 'Nous protégeons vos données avec des mesures de sécurité modernes', measures: ['Chiffrement SSL', 'Serveurs sécurisés', 'Contrôle d\'accès', 'Audits réguliers'] },
+        cookies: { title: '6. Cookies', intro: 'Nous utilisons des cookies pour améliorer votre expérience', types: [{ name: 'Nécessaires', description: 'Pour la fonctionnalité de base' }, { name: 'Analytiques', description: 'Pour analyser l\'utilisation du site' }], management: 'Gestion via les paramètres du navigateur' },
+        rights: { title: '7. Vos droits', intro: 'Vos droits conformément au RGPD', list: ['Accès aux données', 'Rectification des données', 'Suppression des données', 'Portabilité des données'], contact: { text: 'Contactez-nous à', suffix: 'pour exercer vos droits' } },
+        retention: { title: '8. Conservation des données', description: 'Nous conservons les données seulement aussi longtemps que nécessaire', periods: [{ type: 'Données de contact', duration: '3 ans après le dernier contact' }, { type: 'Données de projet', duration: '5 ans pour la comptabilité fiscale' }] },
+        contactInfo: { title: '9. Informations de contact', description: 'Pour toute question, contactez-nous', address: 'Adresse: Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize', email: 'Email: metehan@mscodehub.com', phone: 'Téléphone: +90 543 123 4567' }
       }
     }
   },

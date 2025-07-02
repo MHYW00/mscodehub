@@ -352,12 +352,16 @@ export const de = {
       lawNote: 'Unter der Datenschutz-Grundverordnung',
       sections: {
         controller: {
-          title: '1. Datenverantwortlicher',
-          company: 'MSCodeHub',
-          address: 'Rize, Türkei',
-          email: 'metehan@mscodehub.com',
+          title: '1. Datenverantwortlicher Identität und Kontaktinformationen',
+          company: 'MSCodeHub Informationstechnologien',
+          address: 'Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize/Türkei',
+          email: 'metehan@mscodehub.com (DSGVO Kontaktadresse)',
           phone: '+90 543 123 4567',
-          description: 'In Übereinstimmung mit der Datenschutz-Grundverordnung ("DSGVO") werden Ihre personenbezogenen Daten von MSCodeHub in dem unten beschriebenen Umfang verarbeitet.'
+          website: 'www.mscodehub.com',
+          registration: 'Handelsregisternummer: [Zukünftig auszufüllen]',
+          taxNumber: 'Steuernummer: [Zukünftig auszufüllen]',
+          mersisNo: 'MERSIS Nr.: [Zukünftig auszufüllen]',
+          description: 'In Übereinstimmung mit dem Gesetz Nr. 6698 zum Schutz personenbezogener Daten ("DSGVO") werden Ihre personenbezogenen Daten von MSCodeHub Informationstechnologien ("Datenverantwortlicher") in dem unten beschriebenen Umfang, mit rechtlichen Grundlagen und Sicherheitsmaßnahmen verarbeitet. Dieser Informationstext ist die Benachrichtigung an betroffene Personen gemäß Artikel 10 der DSGVO.'
         },
         dataTypes: {
           title: '2. Verarbeitete personenbezogene Daten',
@@ -443,12 +447,16 @@ export const de = {
           administrative: { title: 'Administrative Maßnahmen', items: ['Zugangsberechtigungen', 'Mitarbeiterschulungen', 'Vertraulichkeitsvereinbarungen', 'Regelmäßige Audits', 'Datenminimierung'] }
         },
         contactInfo: {
-          title: '9. Kontakt',
-          description: 'Für Ihre Fragen zur DSGVO:',
-          controller: 'Datenverantwortlicher: MSCodeHub',
-          email: 'metehan@mscodehub.com',
-          phone: '+90 543 123 4567',
-          address: 'Rize, Türkei'
+          title: '10. Datenverantwortlicher und Kontaktinformationen',
+          description: 'Für alle Arten von Fragen, Meinungen und Vorschlägen zu dieser Datenschutzrichtlinie können Sie uns kontaktieren:',
+          company: 'MSCodeHub Informationstechnologien',
+          address: 'Adresse: Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize',
+          email: 'E-Mail: metehan@mscodehub.com (DSGVO Kontakt)',
+          phone: 'Telefon: +90 543 123 4567',
+          website: 'Website: www.mscodehub.com',
+          responseTime: 'Antragsntwortzeit: Maximal 30 Tage',
+          dpo: 'Datenschutzbeauftragter: Mete Han Yıldırım',
+          workingHours: 'Arbeitszeiten: Montag-Freitag 09:00-18:00'
         }
       }
     },
@@ -459,13 +467,48 @@ export const de = {
       backHome: 'Zurück zur Startseite',
       sections: {
         general: { title: '1. Allgemeine Bestimmungen', content: 'Diese Nutzungsbedingungen gelten für alle von MSCodeHub angebotenen Dienste.' },
-        services: { title: '2. Unsere Dienste', offered: { title: '2.1 Angebotene Dienste', items: ['Webentwicklung', 'E-Commerce', 'Mobile Apps', 'API-Entwicklung'] }, scope: { title: '2.2 Umfang', description: 'Vollständige Webentwicklungsdienstleistungen' } },
-        responsibilities: { title: '3. Benutzerverantwortlichkeiten', user: { title: '3.1 Ihre Verantwortlichkeiten', items: ['Korrekte Informationen bereitstellen', 'Rechtzeitige Zahlung'] }, prohibited: { title: '3.2 Verbotene Aktivitäten', items: ['Illegale Nutzung', 'Systemschäden'] } },
-        intellectual: { title: '4. Geistiges Eigentum', ownership: { title: '4.1 Eigentumsrechte', description: 'Originalarbeiten bleiben unser Eigentum' }, license: { title: '4.2 Lizenz', description: 'Nicht-exklusive Nutzungslizenz nach Zahlung' } },
-        consumer: { title: '5. Verbraucherrechte', withdrawal: { title: '5.1 Widerrufsrecht', description: '14 Tage Widerrufsrecht für Verbraucher' }, conditions: { title: '5.2 Bedingungen', items: ['Gilt nicht für maßgeschneiderte Dienste', 'Erstattung innerhalb 14 Tagen'] } },
-        dataProtection: { title: '6. Datenschutz', compliance: { title: '6.1 DSGVO-Konformität', description: 'Vollständige DSGVO-Compliance' }, rights: { title: '6.2 Ihre Rechte', description: 'Zugang, Berichtigung, Löschung Ihrer Daten' } },
-        legal: { title: '7. Anwendbares Recht', jurisdiction: { title: '7.1 Gerichtsstand', description: 'Deutsches Recht, Gerichte in Rize, Türkei' }, modifications: { title: '7.2 Änderungen', description: 'Recht zur Änderung der Bedingungen' } },
-        effective: { title: '8. Inkrafttreten', date: { title: '8.1 Gültigkeitsdatum', description: 'Gültig ab 1. Januar 2024' } }
+        services: { title: '2. Unsere Dienste', offered: { title: '2.1 Angebotene Dienste', items: ['Webentwicklung', 'E-Commerce', 'Mobile Apps', 'API-Entwicklung'] }, scope: { title: '2.2 Detaillierter Serviceumfang und Prozess', description: 'Die Details, der Umfang, die Preise und Lieferzeiten unserer Services werden nach Kundenbedürfnissen angepasst und mit schriftlichen Verträgen bestätigt.', process: 'Service-Prozess: Bedarfsanalyse → Angebotserstellung → Vertragsunterzeichnung → Projektentwicklung → Test und Abnahme → Lieferung und Schulung → Garantie und Support', quality: 'Qualitätsstandards: ISO 9001 Qualitätsmanagementsystem, agile Methodologie, continuous integration/deployment (CI/CD), Code-Review-Prozesse', delivery: 'Lieferbedingungen: Phasenweise Lieferung nach festgelegten Meilensteinen, Übergang zur nächsten Phase mit Kundenfreigabe, Change-Request-Prozess für Änderungsanfragen' } },
+        responsibilities: { title: '3. Benutzerverantwortlichkeiten', acceptable: { title: '3.1 Akzeptable Nutzung', items: ['Korrekte Informationen bereitstellen', 'Rechtzeitige Zahlung', 'Gesetze einhalten', 'Respektvolle Kommunikation'] }, prohibited: { title: '3.2 Verbotene Aktivitäten', items: ['Illegale Nutzung', 'Systemschäden', 'Malware verbreiten', 'Urheberrechte verletzen'] } },
+        intellectual: { title: '4. Geistiges Eigentum', company: { title: '4.1 Firmeneigentum', description: 'Alle Inhalte, Designs und Codes auf unserer Website sind Eigentum von MSCodeHub' }, projects: { title: '4.2 Projekteigentum', description: 'Die Rechte an entwickelten Projekten werden gemäß Projektvertrag übertragen' } },
+                                      consumer: { 
+          title: '5. Umfassende Verbraucherrechte und Schutz', 
+          intro: 'Ihre Rechte gemäß dem Gesetz Nr. 6502 zum Verbraucherschutz und relevanter Gesetzgebung:',
+          withdrawal: { 
+            title: '5.1 Widerrufsrecht (14 Tage)', 
+            description: 'Bei Fernabsatzverträgen haben Sie das Recht, ohne Angabe von Gründen und ohne Vertragsstrafe innerhalb von 14 Tagen zu widerrufen.',
+            exceptions: 'Widerrufsrecht Ausnahmen: Individuell hergestellte Software, auf Verbraucherwunsch speziell vorbereitete Projekte, begonnene Entwicklungsprozesse.',
+            process: 'Widerruf kann schriftlich oder per E-Mail (metehan@mscodehub.com) mitgeteilt werden. Gezahlte Beträge werden spätestens innerhalb von 14 Tagen zurückerstattet.'
+          },
+          warranty: {
+            title: '5.2 Detaillierte Garantiebedingungen',
+            items: [
+              'Funktionsgarantie: Vollständige Übereinstimmung der gelieferten Software mit den vertraglich spezifizierten Funktionen (12 Monate)',
+              'Fehlerbehebungsgarantie: Kostenlose Behebung von Programmierfehlern, die innerhalb von 6 Monaten nach Lieferung festgestellt werden',
+              'Sicherheitsgarantie: Schließung von Sicherheitslücken innerhalb von 72 Stunden nach Entdeckung',
+              'Leistungsgarantie: Einhaltung der spezifizierten Leistungskriterien (Ladegeschwindigkeit, Antwortzeit)',
+              'Kompatibilitätsgarantie: Spezifizierte Browser-, Betriebssystem- und Gerätekompatibilität'
+            ]
+          },
+          rights: {
+            title: '5.3 Zusätzliche Verbraucherrechte',
+            items: [
+              'Kostenlose Stornierung: Vollständiges kostenloses Stornierungsrecht wenn Service noch nicht begonnen',
+              'Änderungsanträge: Recht auf angemessene Änderungen im Projektumfang',
+              'Zweitmeinung: Recht auf unabhängige Expertenmeinung bei technischen Fragen',
+              'Transparenz: Recht auf regelmäßige Information über Projektfortschritt',
+              'Datenportabilität: Recht auf Erhalt aller Codes und Daten nach Projektende'
+            ]
+          },
+          complaints: {
+            title: '5.4 Beschwerde- und Streitbeilegungsverfahren',
+            description: 'Beschwerden über unsere Dienstleistungen richten Sie bitte zunächst an metehan@mscodehub.com. Schriftliche Antwort erfolgt innerhalb von 15 Werktagen.',
+            escalation: 'Falls keine Lösung: Verbraucherschiedsstellen, Verbrauchergerichte, Verbraucherschutzministerium der Republik Türkei.',
+            alternative: 'Alternative Lösung: Mediation, Schiedsverfahren, Online-Streitbeilegungsplattformen (ODR).'
+          }
+        },
+          dataProtection: { title: '6. Datenschutz', description: 'Die Verarbeitung Ihrer personenbezogenen Daten ist in unserer Datenschutzrichtlinie gemäß DSGVO detailliert beschrieben.\n\nMit der Annahme dieser Bedingungen stimmen Sie der Verarbeitung Ihrer personenbezogenen Daten im Rahmen der DSGVO zu.' },
+        law: { title: '7. Anwendbares Recht und Gerichtsstand', description: 'Diese Vereinbarung unterliegt türkischem Recht. Bei Streitigkeiten sind die Gerichte in Rize, Türkei zuständig. Für Verbrauchergeschäfte gelten die Gerichte am Wohnsitz des Verbrauchers.' },
+                  effective: { title: '8. Inkrafttreten und Änderungen', description: 'Diese Nutzungsbedingungen treten am Veröffentlichungsdatum in Kraft. Änderungen werden auf unserer Website bekannt gegeben und neue Bedingungen gelten ab dem Veröffentlichungsdatum.\n\nDie weitere Nutzung der Website nach Änderungen bedeutet, dass Sie die neuen Bedingungen akzeptieren.' }
       }
     },
     privacy: {
@@ -498,7 +541,14 @@ export const de = {
               'Über Cookies gesammelte Informationen'
             ]
           }
-        }
+        },
+        dataUsage: { title: '3. Datennutzung', purposes: { title: 'Zwecke', items: ['Service-Bereitstellung'] }, legalBasis: { title: 'Rechtsgrundlage', items: [{ title: 'Vertrag', description: 'Vertragserfüllung' }] } },
+        dataSharing: { title: '4. Datenaustausch', intro: 'Wir teilen Daten nur wenn nötig', conditions: ['Rechtliche Anforderungen'] },
+        dataSecurity: { title: '5. Datensicherheit', intro: 'Wir schützen Ihre Daten', measures: ['SSL-Verschlüsselung', 'Sichere Server'] },
+        cookies: { title: '6. Cookies', intro: 'Wir verwenden Cookies', types: [{ name: 'Notwendig', description: 'Für Funktionalität' }], management: 'Über Browser-Einstellungen verwalten' },
+        rights: { title: '7. Ihre Rechte', intro: 'Ihre Rechte unter DSGVO', list: ['Zugang zu Daten', 'Datenkorrektur'], contact: { text: 'Kontakt unter', suffix: '' } },
+        retention: { title: '8. Datenspeicherung', description: 'Wir speichern Daten so lange wie nötig', periods: [{ type: 'Kontaktdaten', duration: '3 Jahre' }] },
+        contactInfo: { title: '9. Kontakt', description: 'Für Fragen kontaktieren Sie uns', address: 'Adresse', email: 'E-Mail', phone: 'Telefon' }
       }
     }
   },

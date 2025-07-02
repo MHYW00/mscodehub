@@ -331,85 +331,6 @@ export const es = {
       button: 'Ponerse en Contacto'
     }
   },
-  contact: {
-    methods: {
-      whatsapp: {
-        title: 'WhatsApp',
-        description: 'Para comunicación rápida'
-      },
-      email: {
-        title: 'Email',
-        description: 'Para información detallada'
-      },
-      location: {
-        title: 'Ubicación',
-        description: 'Dirección de nuestra oficina'
-      },
-      phone: {
-        title: 'Teléfono',
-        description: 'Comunicación directa'
-      },
-      hours: {
-        title: 'Horarios de Trabajo',
-        description: '09:00 - 18:00'
-      }
-    },
-    page: {
-      cta: {
-        title: 'Hablemos de Su Proyecto',
-        subtitle: 'Contáctenos hoy para convertir su proyecto soñado en realidad'
-      }
-    },
-    stats: {
-      response: 'Respuesta en 24 Horas',
-      secure: 'Comunicación Segura',
-      consultation: 'Consulta Gratuita',
-      support: 'Soporte 24/7'
-    },
-    channels: {
-      title: 'Canales de Comunicación',
-      subtitle: 'Elija el método más adecuado para usted'
-    },
-    form: {
-      detailedTitle: 'Formulario de Proyecto Detallado',
-      detailedSubtitle: 'Cuéntenos sobre su proyecto, prepararemos una propuesta personalizada',
-      name: 'Nombre Completo',
-      placeholder: {
-        name: 'Su nombre y apellido',
-        email: 'Su dirección de email',
-        company: 'Nombre de su empresa (opcional)',
-        projectType: 'Sitio web, aplicación móvil, comercio electrónico...',
-        budget: 'Su rango de presupuesto',
-        message: 'Detalles del proyecto y solicitudes especiales...'
-      },
-      email: 'Email',
-      company: 'Empresa',
-      projectType: 'Tipo de Proyecto',
-      budget: 'Presupuesto',
-      message: 'Detalles del Proyecto',
-      submit: 'Enviar Solicitud de Proyecto'
-    },
-    location: {
-      title: 'Ubicación',
-      subtitle: 'Servicio Remoto',
-      city: 'Turquía y Mundial',
-      description: 'Servimos a clientes en todo el mundo con nuestro modelo de trabajo 100% remoto'
-    },
-    services: {
-      local: {
-        title: 'Reuniones Online',
-        description: 'Discusiones de proyectos por videoconferencia'
-      },
-      remote: {
-        title: 'Desarrollo Remoto',
-        description: 'Desarrollo de código completamente remoto y soporte'
-      },
-      flexible: {
-        title: 'Acceso Global',
-        description: 'Servicio accesible 24/7 en todo el mundo'
-      }
-    }
-  },
   cta: {
     title: 'Demos Vida a Su Proyecto',
     description: 'Estamos con usted en su viaje de transformación digital. Contáctenos para una consulta gratuita.',
@@ -446,8 +367,11 @@ export const es = {
             ]
           },
           scope: {
-            title: '2.2 Alcance del Servicio',
-            description: 'Los detalles, alcance y precios de nuestros servicios se determinan por proyecto y se confirman con acuerdos escritos.'
+            title: '2.2 Alcance Detallado del Servicio y Proceso',
+            description: 'Los detalles, alcance, precios y tiempos de entrega de nuestros servicios se personalizan según las necesidades del cliente y se confirman con contratos escritos.',
+            process: 'Proceso de Servicio: Análisis de necesidades → Preparación de propuesta → Firma de contrato → Desarrollo de proyecto → Pruebas y aceptación → Entrega y capacitación → Garantía y soporte',
+            quality: 'Estándares de Calidad: Sistema de gestión de calidad ISO 9001, metodología ágil, integración/despliegue continuo (CI/CD), procesos de revisión de código',
+            delivery: 'Condiciones de Entrega: Entrega por fases según hitos determinados, transición a la siguiente fase con aprobación del cliente, proceso de solicitud de cambio para modificaciones'
           }
         },
         responsibilities: {
@@ -484,22 +408,42 @@ export const es = {
           }
         },
         consumer: {
-          title: '5. Derechos del Consumidor',
+          title: '5. Derechos Integrales del Consumidor y Protección',
+          intro: 'Sus derechos bajo la Ley No. 6502 sobre Protección del Consumidor y legislación relacionada:',
           withdrawal: {
-            title: '5.1 Derecho de Retractación',
-            description: 'De acuerdo con la Ley No. 6502 sobre Protección del Consumidor, los consumidores tienen derecho a retractarse dentro de 14 días en contratos a distancia. Sin embargo, el software personalizado está excluido del derecho de retractación.'
+            title: '5.1 Derecho de Retractación (14 Días)',
+            description: 'En contratos a distancia, tiene derecho a retractarse dentro de 14 días sin indicar ninguna razón y sin pagar ninguna penalización. El derecho de retractación comienza desde la fecha en que se establece el contrato.',
+            exceptions: 'Excepciones al derecho de retractación: Software producido específicamente para la persona, proyectos preparados especialmente bajo solicitud del consumidor, procesos de desarrollo que han comenzado.',
+            process: 'Es suficiente notificar la retractación por escrito o por correo electrónico (metehan@mscodehub.com). Las cantidades que pagó serán reembolsadas dentro de 14 días como máximo.'
           },
           warranty: {
-            title: '5.2 Condiciones de Garantía',
+            title: '5.2 Condiciones Detalladas de Garantía',
             items: [
-              'El software entregado cumple con las características especificadas en el contrato',
-              'Corrección de errores de programación detectados dentro de 3 meses después de la entrega',
-              'Cierre de vulnerabilidades de seguridad en un tiempo razonable'
+              'Garantía Funcional: Cumplimiento total del software entregado con todas las características especificadas en el contrato (12 meses)',
+              'Garantía de Corrección de Errores: Corrección gratuita de errores de programación detectados dentro de 6 meses después de la entrega',
+              'Garantía de Seguridad: Cierre de vulnerabilidades de seguridad dentro de 72 horas desde la fecha de detección',
+              'Garantía de Rendimiento: Cumplimiento con criterios de rendimiento especificados (velocidad de carga, tiempo de respuesta)',
+              'Garantía de Compatibilidad: Compatibilidad especificada con navegador, sistema operativo y dispositivo',
+              'Integridad de Datos: Garantía de recuperación completa en caso de pérdida de datos (si hay respaldos disponibles)',
+              'Servicio Ininterrumpido: 99.5% de garantía de tiempo de actividad, excluyendo mantenimiento planificado'
+            ]
+          },
+          rights: {
+            title: '5.3 Derechos Adicionales del Consumidor',
+            items: [
+              'Cancelación Gratuita: Derecho a cancelación completamente gratuita si el servicio no ha comenzado',
+              'Solicitud de Cambio: Derecho a solicitar cambios razonables dentro del alcance del proyecto',
+              'Segunda Opinión: Derecho a obtener opinión de experto independiente sobre asuntos técnicos',
+              'Transparencia: Derecho a recibir información regular sobre el progreso del proyecto',
+              'Portabilidad de Datos: Derecho a recibir todos los códigos y datos al final del proyecto',
+              'Capacitación y Documentación: Derecho a recibir manual de usuario y capacitación básica'
             ]
           },
           complaints: {
-            title: '5.3 Quejas y Apelaciones',
-            description: 'Puede enviar sus quejas sobre nuestros servicios a metehan@mscodehub.com. Para disputas no resueltas, puede acudir a Comités de Arbitraje del Consumidor y Tribunales del Consumidor.'
+            title: '5.4 Métodos de Resolución de Quejas y Disputas',
+            description: 'Por favor envíe sus quejas sobre nuestros servicios a metehan@mscodehub.com primero. Se dará una respuesta escrita dentro de 15 días hábiles.',
+            escalation: 'Si No Se Encuentra Solución: Comités de Arbitraje del Consumidor (dentro de límites monetarios), Tribunales del Consumidor, Dirección de Protección al Consumidor del Ministerio de Comercio de la República de Turquía.',
+            alternative: 'Soluciones Alternativas: Puede usar mediación, arbitraje, plataformas de resolución de disputas en línea (ODR).'
           }
         },
         dataProtection: {
@@ -522,12 +466,16 @@ export const es = {
       lawNote: 'Bajo el Reglamento General de Protección de Datos',
       sections: {
         controller: {
-          title: '1. Responsable del Tratamiento',
-          company: 'MSCodeHub',
-          address: 'Rize, Turquía',
-          email: 'metehan@mscodehub.com',
+          title: '1. Identidad del Responsable del Tratamiento e Información de Contacto',
+          company: 'MSCodeHub Tecnologías de la Información',
+          address: 'Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize/Turquía',
+          email: 'metehan@mscodehub.com (Dirección de Contacto RGPD)',
           phone: '+90 543 123 4567',
-          description: 'De acuerdo con el Reglamento General de Protección de Datos ("RGPD"), sus datos personales son procesados por MSCodeHub dentro del alcance descrito a continuación.'
+          website: 'www.mscodehub.com',
+          registration: 'Número de Registro Comercial: [A rellenar en el futuro]',
+          taxNumber: 'Número de Impuesto: [A rellenar en el futuro]',
+          mersisNo: 'Número MERSIS: [A rellenar en el futuro]',
+          description: 'De acuerdo con la Ley No. 6698 sobre la Protección de Datos Personales ("RGPD"), sus datos personales son procesados por MSCodeHub Tecnologías de la Información ("Responsable del Tratamiento") dentro del alcance, bases legales y medidas de seguridad descritas a continuación. Este texto informativo es la notificación hecha a los interesados de acuerdo con el Artículo 10 del RGPD.'
         },
         dataTypes: {
           title: '2. Datos Personales que se Procesan',
@@ -725,12 +673,16 @@ export const es = {
       lawNote: 'Bajo el Reglamento General de Protección de Datos',
       sections: {
         controller: {
-          title: '1. Responsable del Tratamiento',
-          company: 'MSCodeHub',
-          address: 'Rize, Turquía',
-          email: 'metehan@mscodehub.com',
+          title: '1. Identidad del Responsable del Tratamiento e Información de Contacto',
+          company: 'MSCodeHub Tecnologías de la Información',
+          address: 'Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize/Turquía',
+          email: 'metehan@mscodehub.com (Dirección de Contacto RGPD)',
           phone: '+90 543 123 4567',
-          description: 'De acuerdo con el Reglamento General de Protección de Datos ("RGPD"), sus datos personales son procesados por MSCodeHub dentro del alcance descrito a continuación.'
+          website: 'www.mscodehub.com',
+          registration: 'Número de Registro Comercial: [A rellenar en el futuro]',
+          taxNumber: 'Número de Impuesto: [A rellenar en el futuro]',
+          mersisNo: 'Número MERSIS: [A rellenar en el futuro]',
+          description: 'De acuerdo con la Ley No. 6698 sobre la Protección de Datos Personales ("RGPD"), sus datos personales son procesados por MSCodeHub Tecnologías de la Información ("Responsable del Tratamiento") dentro del alcance, bases legales y medidas de seguridad descritas a continuación. Este texto informativo es la notificación hecha a los interesados de acuerdo con el Artículo 10 del RGPD.'
         },
         dataTypes: {
           title: '2. Datos Personales que se Procesan',
@@ -913,12 +865,16 @@ export const es = {
           }
         },
         contactInfo: {
-          title: '9. Contacto',
-          description: 'Para sus preguntas sobre RGPD:',
-          controller: 'Controlador de Datos: MSCodeHub',
-          email: 'metehan@mscodehub.com',
-          phone: '+90 543 123 4567',
-          address: 'Rize, Turquía'
+          title: '10. Controlador de Datos e Información de Contacto',
+          description: 'Para todo tipo de preguntas, opiniones y sugerencias sobre esta Política de Privacidad, puede contactarnos:',
+          company: 'MSCodeHub Tecnologías de la Información',
+          address: 'Dirección: Merkez Mahallesi, Atatürk Caddesi, No: 123, Merkez/Rize',
+          email: 'Correo electrónico: metehan@mscodehub.com (Contacto RGPD)',
+          phone: 'Teléfono: +90 543 123 4567',
+          website: 'Sitio web: www.mscodehub.com',
+          responseTime: 'Tiempo de respuesta a solicitudes: Máximo 30 días',
+          dpo: 'Oficial de Protección de Datos: Mete Han Yıldırım',
+          workingHours: 'Horario de Trabajo: Lunes-Viernes 09:00-18:00'
         }
       }
     },
