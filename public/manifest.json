@@ -1,0 +1,70 @@
+{
+  "name": "MSCodeHub - Enterprise Yazılım Çözümleri & Dijital Dönüşüm",
+  "short_name": "MSCodeHub",
+  "description": "Enterprise seviyesinde yazılım geliştirme, web uygulamaları, e-ticaret çözümleri ve dijital dönüşüm hizmetleri",
+  "start_url": "/?utm_source=pwa",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "orientation": "any",
+  "scope": "/",
+  "lang": "tr",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "developer", "technology"],
+  "screenshots": [
+    {
+      "src": "/logo-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "MSCodeHub Portfolio"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Projeler",
+      "short_name": "Projeler",
+      "description": "Geliştirdiğimiz projeleri görüntüle",
+      "url": "/projeler",
+      "icons": [{ "src": "/favicon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "İletişim",
+      "short_name": "İletişim",
+      "description": "Bizimle iletişime geç",
+      "url": "/iletisim",
+      "icons": [{ "src": "/favicon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Teknoloji blog yazılarımızı oku",
+      "url": "/blog",
+      "icons": [{ "src": "/favicon-192x192.png", "sizes": "192x192" }]
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+} 

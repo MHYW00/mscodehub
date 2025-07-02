@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Ana Sayfa -->
+  <url>
+    <loc>https://mscodehub.com/</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mscodehub.com/?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mscodehub.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mscodehub.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mscodehub.com/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mscodehub.com/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mscodehub.com/?lang=ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mscodehub.com/" />
+    <image:image>
+      <image:loc>https://mscodehub.com/logo-1024.png</image:loc>
+      <image:title>MSCodeHub Logo</image:title>
+      <image:caption>MSCodeHub - Modern Web Teknolojileri ve Enterprise Çözümler</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Hakkımızda Sayfası -->
+  <url>
+    <loc>https://mscodehub.com/hakkimizda</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mscodehub.com/hakkimizda?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mscodehub.com/hakkimizda?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mscodehub.com/hakkimizda?lang=es" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mscodehub.com/hakkimizda?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mscodehub.com/hakkimizda?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mscodehub.com/hakkimizda?lang=ru" />
+    <image:image>
+      <image:loc>https://mscodehub.com/mete-han-photo.jpg</image:loc>
+      <image:title>Mete Han Yıldırım - CEO & Founder</image:title>
+    </image:image>
+  </url>
+
+  <!-- Projeler Sayfası -->
+  <url>
+    <loc>https://mscodehub.com/projeler</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mscodehub.com/projeler?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mscodehub.com/projeler?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mscodehub.com/projeler?lang=es" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mscodehub.com/projeler?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mscodehub.com/projeler?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mscodehub.com/projeler?lang=ru" />
+  </url>
+
+  <!-- Blog Ana Sayfası -->
+  <url>
+    <loc>https://mscodehub.com/blog</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mscodehub.com/blog?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mscodehub.com/blog?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mscodehub.com/blog?lang=es" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mscodehub.com/blog?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mscodehub.com/blog?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mscodehub.com/blog?lang=ru" />
+  </url>
+
+  <!-- Blog Makaleleri -->
+  <url>
+    <loc>https://mscodehub.com/blog/react-18-yeni-ozellikler</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mscodehub.com/blog/react-18-yeni-ozellikler?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mscodehub.com/blog/react-18-yeni-ozellikler?lang=en" />
+  </url>
+
+  <url>
+    <loc>https://mscodehub.com/blog/nextjs-app-router</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mscodehub.com/blog/typescript-enterprise-development</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mscodehub.com/blog/css-grid-vs-flexbox</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mscodehub.com/blog/nodejs-microservices</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- İletişim Sayfası -->
+  <url>
+    <loc>https://mscodehub.com/iletisim</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mscodehub.com/iletisim?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mscodehub.com/iletisim?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mscodehub.com/iletisim?lang=es" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://mscodehub.com/iletisim?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mscodehub.com/iletisim?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mscodehub.com/iletisim?lang=ru" />
+  </url>
+
+  <!-- Yasal Sayfalar - Detaylı İçerik -->
+  <url>
+    <loc>https://mscodehub.com/gizlilik-politikasi</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mscodehub.com/gizlilik-politikasi?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mscodehub.com/gizlilik-politikasi?lang=en" />
+  </url>
+
+  <url>
+    <loc>https://mscodehub.com/kullanim-sartlari</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mscodehub.com/kullanim-sartlari?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mscodehub.com/kullanim-sartlari?lang=en" />
+  </url>
+
+  <url>
+    <loc>https://mscodehub.com/kvkk</loc>
+    <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mscodehub.com/kvkk?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mscodehub.com/kvkk?lang=en" />
+  </url>
+
+</urlset> 

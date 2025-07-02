@@ -1,0 +1,110 @@
+# MSCodeHub Robots.txt
+# Modern web teknolojileri ve enterprise çözümler
+
+# Global Bot Rules
+User-agent: *
+Allow: /
+
+# Specific Search Engine Optimizations
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot  
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Social Media Crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Development and Build Directories - Block
+Disallow: /.next/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env*
+Disallow: /scripts/
+Disallow: /_next/webpack/
+Disallow: /_next/static/webpack/
+
+# Admin and Private Areas - Block
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/private/
+Disallow: /test/
+Disallow: /temp/
+
+# Allow Static Assets and API
+Allow: /_next/static/
+Allow: /api/
+Allow: /favicon.ico
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+
+# Block Unwanted Bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: 008
+Disallow: /
+
+# Allow Important Files
+Allow: /manifest.json
+Allow: /sw.js
+Allow: /.well-known/
+
+# Sitemaps
+Sitemap: https://mscodehub.com/sitemap.xml
+
+# Host Declaration
+Host: mscodehub.com
+
+# Additional Info
+# Website: https://mscodehub.com
+# Email: metehan@mscodehub.com
+# Phone: +90 543 123 4567
+# Business Hours: 09:00-18:00 (GMT+3)
+# Languages: Turkish, English, Spanish, German, French, Russian
+# Services: Web Development, E-commerce, API Development, Consulting 
