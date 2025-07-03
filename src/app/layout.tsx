@@ -105,10 +105,8 @@ export default function RootLayout({
         <meta name="revisit-after" content="1 days" />
         <meta name="rating" content="general" />
         <meta name="distribution" content="global" />
-        <meta name="geo.region" content="TR-53" />
-        <meta name="geo.placename" content="Rize" />
-        <meta name="geo.position" content="41.0214;40.5234" />
-        <meta name="ICBM" content="41.0214, 40.5234" />
+        <meta name="geo.region" content="TR" />
+        <meta name="geo.placename" content="Turkey" />
         
         {/* Enhanced Open Graph */}
         <meta property="og:type" content="website" />
@@ -144,9 +142,6 @@ export default function RootLayout({
         <meta property="article:tag" content="TypeScript" />
         
         {/* Business Schema */}
-        <meta property="business:contact_data:street_address" content="Merkez" />
-        <meta property="business:contact_data:locality" content="Rize" />
-        <meta property="business:contact_data:postal_code" content="53000" />
         <meta property="business:contact_data:country_name" content="Turkey" />
         <meta property="business:contact_data:email" content="metehan@mscodehub.com" />
         <meta property="business:contact_data:phone_number" content="+90-543-123-4567" />
@@ -214,7 +209,6 @@ export default function RootLayout({
               "description": "Modern web teknolojileri ile enterprise düzeyde yazılım çözümleri. React, Next.js, TypeScript uzmanı ekip.",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Rize",
                 "addressCountry": "TR"
               },
               "contactPoint": {
@@ -224,8 +218,7 @@ export default function RootLayout({
                 "availableLanguage": ["Turkish", "English"]
               },
               "sameAs": [
-                "https://github.com/mscodehub",
-                "https://linkedin.com/company/mscodehub"
+                "https://www.linkedin.com/company/mscodehub/"
               ],
               "founder": {
                 "@type": "Person",
@@ -269,15 +262,7 @@ export default function RootLayout({
               "priceRange": "₺₺₺",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Merkez",
-                "addressLocality": "Rize",
-                "postalCode": "53000",
                 "addressCountry": "TR"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 41.0214,
-                "longitude": 40.5234
               }
             })
           }}

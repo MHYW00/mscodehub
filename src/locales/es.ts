@@ -62,6 +62,10 @@ export const es = {
         title: 'Ubicación',
         description: 'Nuestra dirección de oficina'
       },
+      linkedin: {
+        title: 'LinkedIn',
+        description: 'Nuestra red profesional'
+      },
       phone: {
         title: 'Teléfono',
         description: 'Contacto directo'

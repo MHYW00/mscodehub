@@ -266,6 +266,10 @@ export const tr = {
         title: 'Konum',
         description: 'Ofis adresimiz'
       },
+      linkedin: {
+        title: 'LinkedIn',
+        description: 'Profesyonel ağımız'
+      },
       phone: {
         title: 'Telefon',
         description: 'Doğrudan iletişim'

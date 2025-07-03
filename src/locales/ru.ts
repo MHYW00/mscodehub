@@ -62,6 +62,10 @@ export const ru = {
         title: 'Местоположение',
         description: 'Адрес нашего офиса'
       },
+      linkedin: {
+        title: 'LinkedIn',
+        description: 'Наша профессиональная сеть'
+      },
       phone: {
         title: 'Телефон',
         description: 'Прямой контакт'
