@@ -83,6 +83,14 @@ export default function RootLayout({
   return (
     <html lang="tr" className="scroll-smooth">
       <head>
+        {/* Mobil viewport meta tags */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="MSCodeHub" />
+        
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
         <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
@@ -152,16 +160,38 @@ export default function RootLayout({
         <meta name="msvalidate.01" content="to-be-added-when-domain-setup" />
         <meta name="yandex-verification" content="to-be-added-when-domain-setup" />
         
-        {/* Viewport fix for mobile */}
+        {/* Mobil viewport ve orientation düzeltmeleri */}
         <script dangerouslySetInnerHTML={{
           __html: `
+            // Viewport height düzeltmesi (mobil tarayıcılar için)
             function setVH() {
               const vh = window.innerHeight * 0.01;
               document.documentElement.style.setProperty('--vh', vh + 'px');
             }
+            
+            // Sayfa yüklendiğinde ve resize/orientation change olduğunda çalıştır
             setVH();
             window.addEventListener('resize', setVH);
-            window.addEventListener('orientationchange', setVH);
+            window.addEventListener('orientationchange', () => {
+              setTimeout(setVH, 100); // Orientation change sonrası kısa bekleme
+            });
+            
+            // iOS Safari'de zoom problemi çözümü
+            document.addEventListener('touchstart', function() {}, {passive: true});
+            
+            // Mobil keyboard açılma kapanma durumları için
+            let initialViewportHeight = window.innerHeight;
+            window.addEventListener('resize', function() {
+              if (window.innerHeight < initialViewportHeight * 0.75) {
+                // Klavye açık
+                document.body.style.position = 'fixed';
+                document.body.style.width = '100%';
+              } else {
+                // Klavye kapalı
+                document.body.style.position = '';
+                document.body.style.width = '';
+              }
+            });
           `
         }} />
         
@@ -292,10 +322,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans min-h-screen flex flex-col antialiased">
+      <body className="font-sans min-h-screen flex flex-col antialiased overflow-x-hidden">
         <LanguageProvider>
           <DynamicLayout>
-          <main className="flex-grow">
+          <main className="flex-grow relative">
             {children}
           </main>
           <Footer />

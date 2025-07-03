@@ -112,6 +112,32 @@
     /* Prevent elements from overflowing on mobile */
     max-width: 100%;
     box-sizing: border-box;
+    /* MOBİL MAVİ KUTUCUK KALDIRMA */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Butonlar ve linkler için özel touch highlight kaldırma */
+  button, a, input, textarea, select, [role="button"], [tabindex] {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+    -webkit-appearance: none;
+    tap-highlight-color: transparent;
+    outline: none;
+  }
+  
+  /* Text seçimini sadece gerekli yerlerde aktif et */
+  p, span, div[contenteditable], textarea, input[type="text"], input[type="email"] {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
   }
   
   /* Smooth scrolling */
@@ -125,6 +151,18 @@
     /* Minimum tap target size */
     min-height: 44px;
     min-width: 44px;
+    /* Mobil highlight kaldırma */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+  
+  /* Özel mobil touch optimizasyonları */
+  .mobile-touch-target {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
   }
   
   /* Improve focus visibility */
@@ -365,20 +403,46 @@
     opacity: 1;
   }
   25% {
-    transform: translateY(-20px) rotate(-5deg);
+    transform: translateY(-8px) rotate(-2deg);
     opacity: 0.9;
   }
   50% {
-    transform: translateY(-40px) rotate(5deg);
+    transform: translateY(-16px) rotate(2deg);
     opacity: 0.8;
   }
   75% {
-    transform: translateY(-60px) rotate(-2deg);
+    transform: translateY(-24px) rotate(-1deg);
     opacity: 0.7;
   }
   100% {
-    transform: translateY(-100px) rotate(0deg);
+    transform: translateY(-32px) rotate(0deg);
     opacity: 0;
+  }
+}
+
+/* Desktop için daha büyük animasyon */
+@media (min-width: 768px) {
+  @keyframes rocket-launch {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    25% {
+      transform: translateY(-20px) rotate(-5deg);
+      opacity: 0.9;
+    }
+    50% {
+      transform: translateY(-40px) rotate(5deg);
+      opacity: 0.8;
+    }
+    75% {
+      transform: translateY(-60px) rotate(-2deg);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 0;
+    }
   }
 }
 
@@ -396,28 +460,60 @@
 @keyframes sparkle {
   0% {
     opacity: 0;
-    transform: scale(0) rotate(0deg);
+    transform: scale(0) rotate(0deg) translateX(0);
   }
   50% {
     opacity: 1;
-    transform: scale(1) rotate(180deg);
+    transform: scale(1) rotate(180deg) translateX(2px);
   }
   100% {
     opacity: 0;
-    transform: scale(0) rotate(360deg);
+    transform: scale(0) rotate(360deg) translateX(4px);
+  }
+}
+
+/* Desktop için daha geniş sparkle animasyonu */
+@media (min-width: 768px) {
+  @keyframes sparkle {
+    0% {
+      opacity: 0;
+      transform: scale(0) rotate(0deg) translateX(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1) rotate(180deg) translateX(6px);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0) rotate(360deg) translateX(12px);
+    }
   }
 }
 
 .rocket-launch {
-  animation: rocket-launch 2s ease-out forwards;
+  animation: rocket-launch 1.5s ease-out forwards;
+  contain: layout style paint;
 }
 
 .flame-flicker {
   animation: flame-flicker 0.3s ease-in-out infinite;
+  contain: layout style paint;
 }
 
 .sparkle {
   animation: sparkle 1s ease-in-out infinite;
+  contain: layout style paint;
+}
+
+/* Mobil için animasyon optimizasyonları */
+@media (max-width: 767px) {
+  .rocket-launch {
+    animation-duration: 1s;
+  }
+  
+  .sparkle {
+    animation-duration: 0.8s;
+  }
 }
 
 /* Enhanced mobile animations */
