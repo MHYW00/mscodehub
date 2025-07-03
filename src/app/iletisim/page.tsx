@@ -25,7 +25,7 @@ function ContactContent() {
     email: '',
     company: '',
     projectType: '',
-    budget: '',
+    budget: 'quote',
     message: ''
   })
 
@@ -95,7 +95,7 @@ Aşağıdaki bilgilerle proje talebi iletmek istiyorum:
 📧 E-posta: ${formData.email}
 🏢 Şirket/Kurum: ${formData.company || 'Belirtilmemiş'}
 💼 Proje Türü: ${formData.projectType}
-💰 Bütçe Aralığı: ${formData.budget || 'Belirtilmemiş'}
+💰 Bütçe Aralığı: Teklif almak istiyorum
 
 📝 Proje Detayları:
 ${formData.message}
@@ -114,7 +114,7 @@ Bu mesaj MSCodeHub web sitesi iletişim formu aracılığıyla oluşturulmuştur
 📧 *E-posta:* ${formData.email}
 🏢 *Şirket:* ${formData.company || 'Belirtilmemiş'}
 💼 *Proje:* ${formData.projectType}
-💰 *Bütçe:* ${formData.budget || 'Belirtilmemiş'}
+💰 *Bütçe:* Teklif almak istiyorum
 
 📝 *Detaylar:*
 ${formData.message}
@@ -129,7 +129,7 @@ ${formData.message}
           email: '',
           company: '',
           projectType: '',
-          budget: '',
+          budget: 'quote',
           message: ''
         })
 
@@ -141,7 +141,7 @@ ${formData.message}
         from_email: formData.email,
         company: formData.company || 'Belirtilmemiş',
         project_type: formData.projectType,
-        budget: formData.budget || 'Belirtilmemiş',
+        budget: 'Teklif almak istiyorum',
         message: formData.message,
         to_email: 'metehan@mscodehub.com'
       }
@@ -159,7 +159,7 @@ ${formData.message}
         email: '',
         company: '',
         projectType: '',
-        budget: '',
+        budget: 'quote',
         message: ''
       })
 
@@ -211,17 +211,6 @@ ${formData.message}
       ),
       value: "Rize, Türkiye",
       link: "#"
-    },
-    {
-      titleKey: "contact.methods.hours.title",
-      descriptionKey: "contact.methods.hours.description",
-      icon: (
-        <svg className="w-8 h-8 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/>
-        </svg>
-      ),
-      value: "09:00 - 18:00",
-      link: "#"
     }
   ]
 
@@ -236,11 +225,6 @@ ${formData.message}
   ]
 
   const budgetRanges = [
-    { name: "1.000₺ - 5.000₺", value: "1k-5k" },
-    { name: "5.000₺ - 15.000₺", value: "5k-15k" },
-    { name: "15.000₺ - 50.000₺", value: "15k-50k" },
-    { name: "50.000₺ - 100.000₺", value: "50k-100k" },
-    { name: "100.000₺+", value: "100k+" },
     { name: "Teklif almak istiyorum", value: "quote" }
   ]
 
@@ -328,7 +312,7 @@ ${formData.message}
           
           <motion.div 
             variants={staggerContainer}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
           >
             {contactMethods.map((method, index) => (
               <motion.div 
@@ -486,14 +470,11 @@ ${formData.message}
                 </label>
                 <select
                   id="budget"
-                  value={formData.budget}
-                  onChange={(e) => setFormData({...formData, budget: e.target.value})}
-                  className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-xl text-white focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all text-base min-h-[48px] touch-manipulation"
+                  value="quote"
+                  disabled
+                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl text-gray-300 cursor-not-allowed text-base min-h-[48px] touch-manipulation"
                 >
-                  <option value="">{t('contact.form.placeholder.budget')}</option>
-                  {budgetRanges.map((range) => (
-                    <option key={range.value} value={range.value}>{range.name}</option>
-                  ))}
+                  <option value="quote">Teklif almak istiyorum</option>
                 </select>
               </div>
 

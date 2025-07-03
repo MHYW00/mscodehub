@@ -72,7 +72,7 @@ export default function Home() {
                 variants={scaleIn}
                 className="text-3xl md:text-4xl font-bold text-blue-400"
               >
-                30+
+                12
               </motion.div>
               <div className="text-gray-400">{t('home.stats.projects')}</div>
             </motion.div>

@@ -51,8 +51,8 @@ export default function Projeler() {
 
   // İstatistikler
   const stats = [
-    { labelKey: "projects.stats.completed", value: "25+", icon: "https://cdn-icons-png.flaticon.com/32/190/190411.png", color: "text-green-400" },
-    { labelKey: "projects.stats.activeClients", value: "12+", icon: "https://cdn-icons-png.flaticon.com/32/1077/1077114.png", color: "text-blue-400" },
+    { labelKey: "projects.stats.completed", value: "12", icon: "https://cdn-icons-png.flaticon.com/32/190/190411.png", color: "text-green-400" },
+    { labelKey: "projects.stats.activeClients", value: "8+", icon: "https://cdn-icons-png.flaticon.com/32/1077/1077114.png", color: "text-blue-400" },
     { labelKey: "projects.stats.codeLines", value: "300K+", icon: "https://cdn-icons-png.flaticon.com/32/1336/1336494.png", color: "text-purple-400" },
     { labelKey: "projects.stats.uptime", value: "%99.8", icon: "https://cdn-icons-png.flaticon.com/32/2983/2983788.png", color: "text-orange-400" }
   ]
@@ -77,7 +77,7 @@ export default function Projeler() {
       category: "web",
       status: "completed",
       duration: "3-4 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&auto=format",
       features: ["Responsive Tasarım", "SEO Optimizasyonu", "Admin Paneli", "İletişim Formu"],
       icon: "https://cdn-icons-png.flaticon.com/32/1006/1006771.png",
       socialProof: "Son 30 günde 8 müşteri seçti",
@@ -92,7 +92,7 @@ export default function Projeler() {
       category: "web",
       status: "completed",
       duration: "2-3 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop&auto=format",
       features: ["Proje Galerisi", "Blog Sistemi", "İletişim Formu", "Hızlı Yükleme"],
       icon: "https://cdn-icons-png.flaticon.com/32/3135/3135715.png"
     },
@@ -103,7 +103,7 @@ export default function Projeler() {
       category: "web",
       status: "completed",
       duration: "3-4 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=250&fit=crop&auto=format",
       features: ["Online Menü", "Rezervasyon Sistemi", "Online Sipariş", "Ödeme Entegrasyonu"],
       icon: "https://cdn-icons-png.flaticon.com/32/685/685352.png"
     },
@@ -114,7 +114,7 @@ export default function Projeler() {
       category: "web",
       status: "inDevelopment",
       duration: "4-6 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop&auto=format",
       features: ["Gelişmiş Filtreleme", "Harita Entegrasyonu", "CRM Sistemi", "Mobil Uyumlu"],
       icon: "https://cdn-icons-png.flaticon.com/32/1946/1946488.png"
     },
@@ -127,7 +127,7 @@ export default function Projeler() {
       category: "ecommerce",
       status: "completed",
       duration: "4-5 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&auto=format",
       features: ["Ürün Kataloğu", "Sepet Sistemi", "Ödeme Entegrasyonu", "Sipariş Yönetimi"],
       icon: "https://cdn-icons-png.flaticon.com/32/3081/3081559.png",
       socialProof: "Son 7 günde 5 müşteri seçti",
@@ -142,7 +142,7 @@ export default function Projeler() {
       category: "ecommerce",
       status: "completed",
       duration: "8-10 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop&auto=format",
       features: ["Bayi Sistemi", "Toplu Sipariş", "Özel Fiyatlandırma", "Stok Yönetimi"],
       icon: "https://cdn-icons-png.flaticon.com/32/2830/2830284.png"
     },
@@ -153,7 +153,7 @@ export default function Projeler() {
       category: "ecommerce",
       status: "inDevelopment",
       duration: "12-16 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=250&fit=crop&auto=format",
       features: ["Çok Satıcı", "Komisyon Sistemi", "Ödeme Dağıtımı", "Satıcı Paneli"],
       icon: "https://cdn-icons-png.flaticon.com/32/2830/2830657.png"
     },
@@ -166,7 +166,7 @@ export default function Projeler() {
       category: "mobile",
       status: "completed",
       duration: "6-8 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop&auto=format",
       features: ["Push Notification", "Offline Destek", "Kullanıcı Paneli", "İletişim Modülü"],
       icon: "https://cdn-icons-png.flaticon.com/32/2991/2991148.png",
       socialProof: "4.9/5 müşteri memnuniyeti",
@@ -181,7 +181,7 @@ export default function Projeler() {
       category: "mobile",
       status: "inDevelopment",
       duration: "8-10 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop&auto=format",
       features: ["Mobil Ödeme", "Sipariş Takibi", "Push Bildirim", "Offline Sepet"],
       icon: "https://cdn-icons-png.flaticon.com/32/3081/3081559.png"
     },
@@ -194,7 +194,7 @@ export default function Projeler() {
       category: "dashboard",
       status: "completed",
       duration: "6-8 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&auto=format",
       features: ["Gerçek Zamanlı Veriler", "İnteraktif Grafikler", "PDF Raporlar", "Kullanıcı Yetkileri"],
       icon: "https://cdn-icons-png.flaticon.com/32/1828/1828673.png"
     },
@@ -205,7 +205,7 @@ export default function Projeler() {
       category: "dashboard",
       status: "completed",
       duration: "8-10 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=250&fit=crop&auto=format",
       features: ["Task Yönetimi", "Zaman Takibi", "Gantt Chart", "Ekip İşbirliği"],
       icon: "https://cdn-icons-png.flaticon.com/32/3135/3135706.png"
     },
@@ -218,7 +218,7 @@ export default function Projeler() {
       category: "api",
       status: "completed",
       duration: "4-6 hafta",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1518186233392-c232efbf2373?w=400&h=250&fit=crop&auto=format",
       features: ["JWT Authentication", "Rate Limiting", "API Documentation", "Error Handling"],
       icon: "https://cdn-icons-png.flaticon.com/32/2721/2721297.png"
     }
