@@ -75,9 +75,8 @@ export default function Projeler() {
       description: "Modern tasarım ve SEO optimizasyonu ile kurumsal web sitesi. Responsive tasarım, hızlı yükleme ve admin paneli.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS", "Strapi CMS"],
       category: "web",
-      status: "completed",
       duration: "3-4 hafta",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Responsive Tasarım", "SEO Optimizasyonu", "Admin Paneli", "İletişim Formu"],
       icon: "https://cdn-icons-png.flaticon.com/32/1006/1006771.png",
       socialProof: "Son 30 günde 8 müşteri seçti",
@@ -90,9 +89,8 @@ export default function Projeler() {
       description: "Freelancer ve ajanslar için modern portfolio sitesi. Proje galerisi, blog sistemi ve iletişim entegrasyonu.",
       tech: ["React", "Gatsby", "GraphQL", "Netlify CMS"],
       category: "web",
-      status: "completed",
       duration: "2-3 hafta",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68e2c6474a?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Proje Galerisi", "Blog Sistemi", "İletişim Formu", "Hızlı Yükleme"],
       icon: "https://cdn-icons-png.flaticon.com/32/3135/3135715.png"
     },
@@ -101,9 +99,8 @@ export default function Projeler() {
       description: "Restoran ve kafe işletmeleri için menü, rezervasyon ve online sipariş sistemi entegreli web sitesi.",
       tech: ["WordPress", "WooCommerce", "Custom Theme", "Payment Gateway"],
       category: "web",
-      status: "completed",
       duration: "3-4 hafta",
-      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Online Menü", "Rezervasyon Sistemi", "Online Sipariş", "Ödeme Entegrasyonu"],
       icon: "https://cdn-icons-png.flaticon.com/32/685/685352.png"
     },
@@ -112,9 +109,8 @@ export default function Projeler() {
       description: "Emlak ofisleri için gelişmiş filtreleme, harita entegrasyonu ve CRM sistemi olan web sitesi.",
       tech: ["Vue.js", "Laravel", "MySQL", "Google Maps API"],
       category: "web",
-      status: "inDevelopment",
       duration: "4-6 hafta",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Gelişmiş Filtreleme", "Harita Entegrasyonu", "CRM Sistemi", "Mobil Uyumlu"],
       icon: "https://cdn-icons-png.flaticon.com/32/1946/1946488.png"
     },
@@ -125,9 +121,8 @@ export default function Projeler() {
       description: "KOBİ'ler için basit ve etkili e-ticaret çözümü. Ürün yönetimi, sipariş takibi ve ödeme entegrasyonu.",
       tech: ["Shopify", "Liquid", "JavaScript", "Payment APIs"],
       category: "ecommerce",
-      status: "completed",
       duration: "4-5 hafta",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Ürün Kataloğu", "Sepet Sistemi", "Ödeme Entegrasyonu", "Sipariş Yönetimi"],
       icon: "https://cdn-icons-png.flaticon.com/32/3081/3081559.png",
       socialProof: "Son 7 günde 5 müşteri seçti",
@@ -140,9 +135,8 @@ export default function Projeler() {
       description: "Toptan satış için gelişmiş B2B e-ticaret sistemi. Bayi yönetimi, toplu sipariş ve özel fiyatlandırma.",
       tech: ["Next.js", "Node.js", "PostgreSQL", "Redis"],
       category: "ecommerce",
-      status: "completed",
       duration: "8-10 hafta",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Bayi Sistemi", "Toplu Sipariş", "Özel Fiyatlandırma", "Stok Yönetimi"],
       icon: "https://cdn-icons-png.flaticon.com/32/2830/2830284.png"
     },
@@ -151,9 +145,8 @@ export default function Projeler() {
       description: "Çok satıcılı marketplace sistemi. Satıcı paneli, komisyon sistemi ve ödeme dağıtımı.",
       tech: ["React", "Express.js", "MongoDB", "Stripe Connect"],
       category: "ecommerce",
-      status: "inDevelopment",
       duration: "12-16 hafta",
-      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Çok Satıcı", "Komisyon Sistemi", "Ödeme Dağıtımı", "Satıcı Paneli"],
       icon: "https://cdn-icons-png.flaticon.com/32/2830/2830657.png"
     },
@@ -164,9 +157,8 @@ export default function Projeler() {
       description: "İşletmeler için müşteri hizmetleri ve bilgilendirme amaçlı mobil uygulama. Push notification ve offline destek.",
       tech: ["React Native", "Firebase", "AsyncStorage", "Push Notifications"],
       category: "mobile",
-      status: "completed",
       duration: "6-8 hafta",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Push Notification", "Offline Destek", "Kullanıcı Paneli", "İletişim Modülü"],
       icon: "https://cdn-icons-png.flaticon.com/32/2991/2991148.png",
       socialProof: "4.9/5 müşteri memnuniyeti",
@@ -179,9 +171,8 @@ export default function Projeler() {
       description: "E-ticaret sitesi için companion mobil uygulama. Sepet, ödeme ve sipariş takibi özellikleri.",
       tech: ["Flutter", "Dart", "REST API", "Payment Gateway"],
       category: "mobile",
-      status: "inDevelopment",
       duration: "8-10 hafta",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Mobil Ödeme", "Sipariş Takibi", "Push Bildirim", "Offline Sepet"],
       icon: "https://cdn-icons-png.flaticon.com/32/3081/3081559.png"
     },
@@ -192,9 +183,8 @@ export default function Projeler() {
       description: "KPI takibi ve veri analizi için interaktif dashboard. Gerçek zamanlı grafikler ve raporlama sistemi.",
       tech: ["React", "D3.js", "Node.js", "PostgreSQL"],
       category: "dashboard",
-      status: "completed",
       duration: "6-8 hafta",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Gerçek Zamanlı Veriler", "İnteraktif Grafikler", "PDF Raporlar", "Kullanıcı Yetkileri"],
       icon: "https://cdn-icons-png.flaticon.com/32/1828/1828673.png"
     },
@@ -203,9 +193,8 @@ export default function Projeler() {
       description: "Ekip çalışması için task yönetimi, zaman takibi ve proje planlama sistemi. Gantt chart ve kanban board.",
       tech: ["Vue.js", "Laravel", "MySQL", "WebSocket"],
       category: "dashboard",
-      status: "completed",
       duration: "8-10 hafta",
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Task Yönetimi", "Zaman Takibi", "Gantt Chart", "Ekip İşbirliği"],
       icon: "https://cdn-icons-png.flaticon.com/32/3135/3135706.png"
     },
@@ -216,9 +205,8 @@ export default function Projeler() {
       description: "Ölçeklenebilir ve güvenli API sistemi. Authentication, rate limiting ve comprehensive documentation.",
       tech: ["Node.js", "Express", "JWT", "Swagger"],
       category: "api",
-      status: "completed",
       duration: "4-6 hafta",
-      image: "https://images.unsplash.com/photo-1518186233392-c232efbf2373?w=400&h=250&fit=crop&auto=format",
+      image: "https://images.unsplash.com/photo-1518186233392-c232efbf2373?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["JWT Authentication", "Rate Limiting", "API Documentation", "Error Handling"],
       icon: "https://cdn-icons-png.flaticon.com/32/2721/2721297.png"
     }
@@ -268,18 +256,7 @@ export default function Projeler() {
     return `${baseStyle} bg-gray-800/50 text-gray-300 border-gray-700 hover:border-gray-600 hover:text-white`
   }
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'completed':
-        return 'bg-green-500/20 text-green-400 border-green-500/30'
-      case 'inDevelopment':
-        return 'bg-blue-500/20 text-blue-400 border-blue-500/30'
-      case 'beta':
-        return 'bg-orange-500/20 text-orange-400 border-orange-500/30'
-      default:
-        return 'bg-gray-500/20 text-gray-400 border-gray-500/30'
-    }
-  }
+
 
   const filteredProjects = getFilteredProjects()
 
@@ -456,13 +433,10 @@ export default function Projeler() {
                     </div>
 
                     <div className="p-6 flex-1">
-                      <div className="flex items-start justify-between mb-4">
+                      <div className="mb-4">
                         <h3 className="text-xl font-semibold text-white group-hover:text-gray-200 transition-colors">
                           {project.title}
                         </h3>
-                        <span className={`px-3 py-1 rounded-full text-xs font-medium border ${getStatusColor(project.status)}`}>
-                          {t(`projects.status.${project.status}`)}
-                        </span>
                       </div>
               
                       <p className="text-gray-400 mb-4 text-sm leading-relaxed group-hover:text-gray-300 transition-colors">
