@@ -407,12 +407,36 @@ export default function Projeler() {
                     className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:border-gray-600/50 transition-all duration-300 group"
                   >
                     {/* Proje Görseli */}
-                    <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 p-6 flex items-center justify-center relative overflow-hidden h-48">
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10"></div>
+                    <div className="relative overflow-hidden h-48">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                        onError={(e) => {
+                          // Görsel yüklenemezse fallback gradient göster
+                          e.currentTarget.style.display = 'none';
+                          const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                          if (fallback) {
+                            fallback.style.display = 'flex';
+                          }
+                        }}
+                      />
+                      {/* Fallback gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 flex items-center justify-center hidden">
+                        <div className="text-center">
+                          <div className="mb-2 flex justify-center">
+                            <img src={project.icon} alt={project.title} className="w-12 h-12" />
+                          </div>
+                          <div className="text-white font-semibold text-sm">{project.title}</div>
+                        </div>
+                      </div>
+                      
+                      {/* Overlay gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                       
                       {/* Sosyal Kanıt Badge */}
                       {project.socialProof && (
-                        <div className="absolute top-3 left-3 bg-green-500/20 border border-green-500/30 text-green-400 px-2 py-1 rounded-full text-xs flex items-center gap-1">
+                        <div className="absolute top-3 left-3 bg-green-500/20 backdrop-blur-sm border border-green-500/30 text-green-400 px-2 py-1 rounded-full text-xs flex items-center gap-1">
                           <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
                           {project.socialProof}
                         </div>
@@ -420,16 +444,14 @@ export default function Projeler() {
                       
                       {/* Urgency Badge */}
                       {project.urgency && (
-                        <div className="absolute top-3 right-3 bg-orange-500/20 border border-orange-500/30 text-orange-400 px-2 py-1 rounded-full text-xs">
+                        <div className="absolute top-3 right-3 bg-orange-500/20 backdrop-blur-sm border border-orange-500/30 text-orange-400 px-2 py-1 rounded-full text-xs">
                           {project.urgency}
                         </div>
                       )}
                       
-                      <div className="relative z-10 text-center">
-                        <div className="mb-2 flex justify-center">
-                          <img src={project.icon} alt={project.title} className="w-12 h-12" />
-                        </div>
-                        <div className="text-white font-semibold">{project.title}</div>
+                      {/* Proje ikonu köşede */}
+                      <div className="absolute bottom-3 left-3">
+                        <img src={project.icon} alt={project.title} className="w-8 h-8 opacity-80" />
                       </div>
                     </div>
 
