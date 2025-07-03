@@ -58,9 +58,9 @@ export const es = {
         title: 'Email',
         description: 'Para información detallada'
       },
-      location: {
-        title: 'Ubicación',
-        description: 'Nuestra dirección de oficina'
+      instagram: {
+        title: 'Instagram',
+        description: 'Nuestro contenido visual'
       },
       linkedin: {
         title: 'LinkedIn',

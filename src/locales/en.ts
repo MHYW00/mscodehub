@@ -58,9 +58,9 @@ export const en = {
         title: 'Email',
         description: 'For detailed information'
       },
-      location: {
-        title: 'Location',
-        description: 'Our office address'
+      instagram: {
+        title: 'Instagram',
+        description: 'Our visual content'
       },
       linkedin: {
         title: 'LinkedIn',

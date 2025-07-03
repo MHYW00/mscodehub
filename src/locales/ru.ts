@@ -58,9 +58,9 @@ export const ru = {
         title: 'Электронная почта',
         description: 'Для подробной информации'
       },
-      location: {
-        title: 'Местоположение',
-        description: 'Адрес нашего офиса'
+      instagram: {
+        title: 'Instagram',
+        description: 'Наш визуальный контент'
       },
       linkedin: {
         title: 'LinkedIn',

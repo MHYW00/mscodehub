@@ -262,9 +262,9 @@ export const tr = {
         title: 'E-posta',
         description: 'Detaylı bilgi için'
       },
-      location: {
-        title: 'Konum',
-        description: 'Ofis adresimiz'
+      instagram: {
+        title: 'Instagram',
+        description: 'Görsel içeriklerimiz'
       },
       linkedin: {
         title: 'LinkedIn',

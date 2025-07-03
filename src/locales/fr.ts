@@ -58,9 +58,9 @@ export const fr = {
         title: 'Email',
         description: 'Pour des informations détaillées'
       },
-      location: {
-        title: 'Localisation',
-        description: 'Adresse de notre bureau'
+      instagram: {
+        title: 'Instagram',
+        description: 'Notre contenu visuel'
       },
       linkedin: {
         title: 'LinkedIn',
