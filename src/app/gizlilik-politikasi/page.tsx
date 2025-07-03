@@ -147,7 +147,7 @@ const GizlilikPolitikasi = () => {
                   ]).map((item: string, index: number) => (
                     <div key={index} className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 p-4 rounded-lg border-l-4 border-blue-500">
                       <div className="flex items-start space-x-3">
-                        <span className="text-blue-400 font-bold mt-1">⚙️</span>
+                        <img src="https://cdn-icons-png.flaticon.com/32/2040/2040504.png" alt="Settings" className="w-5 h-5 mt-1" />
                         <span className="text-sm leading-relaxed">{item}</span>
                       </div>
                     </div>
@@ -162,7 +162,7 @@ const GizlilikPolitikasi = () => {
               <div className="text-gray-300 space-y-6">
                 
                 <h3 className="text-lg font-semibold text-purple-400 flex items-center">
-                  <span className="mr-2">🎯</span>
+                  <img src="https://cdn-icons-png.flaticon.com/32/1055/1055687.png" alt="Target" className="w-5 h-5 mr-2" />
                   {privacySections?.dataUsage?.purposes?.title || '3.1 Detaylı İşleme Amaçları'}
                 </h3>
                 <div className="grid gap-3">
@@ -182,7 +182,7 @@ const GizlilikPolitikasi = () => {
                 </div>
 
                 <h3 className="text-lg font-semibold text-yellow-400 flex items-center mt-8">
-                  <span className="mr-2">⚖️</span>
+                  <img src="https://cdn-icons-png.flaticon.com/32/1040/1040230.png" alt="Justice" className="w-5 h-5 mr-2" />
                   {privacySections?.dataUsage?.legalBasis?.title || '3.2 Hukuki Sebepler (KVKK m.5 ve m.6)'}
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
@@ -210,7 +210,7 @@ const GizlilikPolitikasi = () => {
               <div className="text-gray-300 space-y-6">
                 <div className="bg-gradient-to-r from-red-900/20 to-orange-900/20 p-6 rounded-lg border border-red-500/20">
                   <h3 className="text-lg font-semibold text-red-400 mb-4 flex items-center">
-                    <span className="mr-2">🛡️</span>
+                    <img src="https://cdn-icons-png.flaticon.com/32/2913/2913112.png" alt="Shield" className="w-5 h-5 mr-2" />
                     Gizlilik İlkemiz
                   </h3>
                   <p className="leading-relaxed">{privacySections?.dataSharing?.intro || 'Kişisel verilerinizi aşağıdaki durumlar dışında üçüncü taraflarla paylaşmayız ve satmayız.'}</p>
@@ -271,7 +271,7 @@ const GizlilikPolitikasi = () => {
                   ]).map((measure: string, index: number) => (
                     <div key={index} className="bg-gradient-to-r from-teal-900/20 to-green-900/20 p-4 rounded-lg border border-teal-500/20">
                       <div className="flex items-start space-x-3">
-                        <span className="text-teal-400 font-bold mt-1">🛡️</span>
+                        <img src="https://cdn-icons-png.flaticon.com/32/2913/2913112.png" alt="Security" className="w-5 h-5 mt-1" />
                         <span className="text-sm leading-relaxed">{measure}</span>
                       </div>
                     </div>
@@ -303,7 +303,7 @@ const GizlilikPolitikasi = () => {
                   ]).map((type: any, index: number) => (
                     <div key={index} className="bg-gradient-to-r from-purple-900/20 to-indigo-900/20 p-4 rounded-lg border-l-4 border-purple-500">
                       <div className="flex items-start space-x-3">
-                        <span className="text-purple-400 font-bold mt-1">🎯</span>
+                        <img src="https://cdn-icons-png.flaticon.com/32/1055/1055687.png" alt="Target" className="w-5 h-5 mt-1" />
                         <div>
                           <h4 className="font-semibold text-purple-400 mb-1">{type?.name}</h4>
                           <p className="text-sm leading-relaxed">{type?.description}</p>
@@ -314,7 +314,10 @@ const GizlilikPolitikasi = () => {
                 </div>
                 
                 <div className="bg-yellow-900/20 p-4 rounded-lg border-l-4 border-yellow-400">
-                  <h4 className="font-semibold text-yellow-400 mb-2">⚡ Çerez Yönetimi</h4>
+                  <h4 className="font-semibold text-yellow-400 mb-2 flex items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/32/2040/2040504.png" alt="Settings" className="w-5 h-5 mr-2" />
+                    Çerez Yönetimi
+                  </h4>
                   <p className="text-sm">{privacySections?.cookies?.management || 'Tarayıcı ayarlarınızdan çerezleri yönetebilir, kabul etmeyebilir veya silebilirsiniz. Ancak bu durum site fonksiyonlarını etkileyebilir.'}</p>
                 </div>
               </div>
@@ -347,7 +350,7 @@ const GizlilikPolitikasi = () => {
                   ]).map((right: string, index: number) => (
                     <div key={index} className="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 p-4 rounded-lg border border-cyan-500/20">
                       <div className="flex items-start space-x-3">
-                        <span className="text-cyan-400 font-bold mt-1">⚡</span>
+                        <img src="https://cdn-icons-png.flaticon.com/32/2983/2983788.png" alt="Fast" className="w-5 h-5 mt-1" />
                         <span className="text-sm leading-relaxed">{right}</span>
                       </div>
                     </div>
@@ -431,7 +434,7 @@ const GizlilikPolitikasi = () => {
                   </div>
                   <div className="bg-yellow-900/20 p-4 rounded-lg border-l-4 border-yellow-400">
                     <h4 className="font-semibold text-yellow-400 mb-2 flex items-center">
-                      <span className="mr-2">🛡️</span>
+                                              <img src="https://cdn-icons-png.flaticon.com/32/2913/2913112.png" alt="Security" className="w-5 h-5 mr-2" />
                       Uygun Güvenceler
                     </h4>
                     <p className="text-sm">Standard Contractual Clauses, Binding Corporate Rules, sertifika programları ile korumalı transferler</p>

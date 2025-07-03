@@ -28,11 +28,11 @@ const Navigation = () => {
   const currentLang = languages.find(lang => lang.code === language) || languages[0]
 
   const navItems = [
-    { name: isHydrated ? t('nav.home') : 'Ana Sayfa', href: '/', icon: '🏠' },
-    { name: isHydrated ? t('nav.about') : 'Hakkımızda', href: '/hakkimizda', icon: '👥' },
-    { name: isHydrated ? t('nav.projects') : 'Projeler', href: '/projeler', icon: '🚀' },
-    { name: isHydrated ? t('nav.blog') : 'Blog', href: '/blog', icon: '📝' },
-    { name: isHydrated ? t('nav.contact') : 'İletişim', href: '/iletisim', icon: '📞' },
+    { name: isHydrated ? t('nav.home') : 'Ana Sayfa', href: '/', icon: 'https://cdn-icons-png.flaticon.com/32/1946/1946436.png' },
+    { name: isHydrated ? t('nav.about') : 'Hakkımızda', href: '/hakkimizda', icon: 'https://cdn-icons-png.flaticon.com/32/1077/1077114.png' },
+    { name: isHydrated ? t('nav.projects') : 'Projeler', href: '/projeler', icon: 'https://cdn-icons-png.flaticon.com/32/3767/3767084.png' },
+    { name: isHydrated ? t('nav.blog') : 'Blog', href: '/blog', icon: 'https://cdn-icons-png.flaticon.com/32/3534/3534033.png' },
+    { name: isHydrated ? t('nav.contact') : 'İletişim', href: '/iletisim', icon: 'https://cdn-icons-png.flaticon.com/32/3135/3135823.png' },
   ]
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false)
@@ -266,7 +266,7 @@ const Navigation = () => {
                 }`}
                 style={{ WebkitTapHighlightColor: 'transparent' }}
               >
-                <span className="text-2xl">{item.icon}</span>
+                <img src={item.icon} alt={item.name} className="w-6 h-6" />
                 <span>{item.name}</span>
               </Link>
             </motion.div>

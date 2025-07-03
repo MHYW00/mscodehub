@@ -132,7 +132,8 @@ const KullanimSartlari = () => {
                     {termsSections?.services?.scope?.quality && (
                       <div className="bg-gray-800/30 p-6 rounded-lg border border-blue-500/20">
                         <h4 className="font-semibold text-blue-400 mb-3 flex items-center">
-                          <span className="mr-2">⭐</span> Kalite Standartları
+                          <img src="https://cdn-icons-png.flaticon.com/32/1828/1828884.png" alt="Quality" className="w-5 h-5 mr-2" />
+                          Kalite Standartları
                         </h4>
                         <p className="text-sm leading-relaxed">{termsSections.services.scope.quality}</p>
                       </div>
@@ -257,7 +258,10 @@ const KullanimSartlari = () => {
                     
                     {termsSections?.consumer?.withdrawal?.exceptions && (
                       <div className="bg-yellow-900/20 p-4 rounded-lg border-l-4 border-yellow-400">
-                        <h4 className="font-semibold text-yellow-400 mb-2">⚠️ Cayma Hakkı İstisnalar</h4>
+                        <h4 className="font-semibold text-yellow-400 mb-2 flex items-center">
+                          <img src="https://cdn-icons-png.flaticon.com/32/564/564619.png" alt="Warning" className="w-5 h-5 mr-2" />
+                          Cayma Hakkı İstisnalar
+                        </h4>
                         <p className="text-sm">{termsSections.consumer.withdrawal.exceptions}</p>
                       </div>
                     )}
@@ -281,7 +285,7 @@ const KullanimSartlari = () => {
                     ]).map((item: string, index: number) => (
                       <div key={index} className="bg-gradient-to-r from-green-900/20 to-blue-900/20 p-4 rounded-lg border-l-4 border-green-500">
                         <div className="flex items-start space-x-3">
-                          <span className="text-green-400 font-bold mt-1">🛡️</span>
+                          <img src="https://cdn-icons-png.flaticon.com/32/2913/2913112.png" alt="Shield" className="w-5 h-5 mt-1" />
                           <span className="text-sm leading-relaxed">{item}</span>
                         </div>
                       </div>
@@ -317,7 +321,10 @@ const KullanimSartlari = () => {
                     
                     {termsSections?.consumer?.complaints?.escalation && (
                       <div className="bg-red-900/20 p-4 rounded-lg border-l-4 border-red-400">
-                        <h4 className="font-semibold text-red-400 mb-2">⚖️ Çözüm Bulunamazsa</h4>
+                        <h4 className="font-semibold text-red-400 mb-2 flex items-center">
+                          <img src="https://cdn-icons-png.flaticon.com/32/1040/1040230.png" alt="Justice" className="w-5 h-5 mr-2" />
+                          Çözüm Bulunamazsa
+                        </h4>
                         <p className="text-sm">{termsSections.consumer.complaints.escalation}</p>
                       </div>
                     )}

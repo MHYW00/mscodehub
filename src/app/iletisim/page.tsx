@@ -91,13 +91,13 @@ Merhaba,
 
 Aşağıdaki bilgilerle proje talebi iletmek istiyorum:
 
-👤 Ad Soyad: ${formData.name}
-📧 E-posta: ${formData.email}
-🏢 Şirket/Kurum: ${formData.company || 'Belirtilmemiş'}
-💼 Proje Türü: ${formData.projectType}
-💰 Bütçe Aralığı: Teklif almak istiyorum
+• Ad Soyad: ${formData.name}
+• E-posta: ${formData.email}
+• Şirket/Kurum: ${formData.company || 'Belirtilmemiş'}
+• Proje Türü: ${formData.projectType}
+• Bütçe Aralığı: Teklif almak istiyorum
 
-📝 Proje Detayları:
+• Proje Detayları:
 ${formData.message}
 
 ---
@@ -108,15 +108,15 @@ Bu mesaj MSCodeHub web sitesi iletişim formu aracılığıyla oluşturulmuştur
         
         setTimeout(() => {
           const whatsappMessage = `
-🔹 *MSCodeHub Proje Talebi*
+• *MSCodeHub Proje Talebi*
 
-👤 *Ad:* ${formData.name}
-📧 *E-posta:* ${formData.email}
-🏢 *Şirket:* ${formData.company || 'Belirtilmemiş'}
-💼 *Proje:* ${formData.projectType}
-💰 *Bütçe:* Teklif almak istiyorum
+• *Ad:* ${formData.name}
+• *E-posta:* ${formData.email}
+• *Şirket:* ${formData.company || 'Belirtilmemiş'}
+• *Proje:* ${formData.projectType}
+• *Bütçe:* Teklif almak istiyorum
 
-📝 *Detaylar:*
+• *Detaylar:*
 ${formData.message}
           `
           window.open(`https://wa.me/905431234567?text=${encodeURIComponent(whatsappMessage)}`, '_blank')

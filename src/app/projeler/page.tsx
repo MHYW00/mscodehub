@@ -51,7 +51,7 @@ export default function Projeler() {
 
   // İstatistikler
   const stats = [
-    { labelKey: "projects.stats.completed", value: "12", icon: "https://cdn-icons-png.flaticon.com/32/190/190411.png", color: "text-green-400" },
+    { labelKey: "projects.stats.completed", value: "12+", icon: "https://cdn-icons-png.flaticon.com/32/190/190411.png", color: "text-green-400" },
     { labelKey: "projects.stats.activeClients", value: "8+", icon: "https://cdn-icons-png.flaticon.com/32/1077/1077114.png", color: "text-blue-400" },
     { labelKey: "projects.stats.codeLines", value: "300K+", icon: "https://cdn-icons-png.flaticon.com/32/1336/1336494.png", color: "text-purple-400" },
     { labelKey: "projects.stats.uptime", value: "%99.8", icon: "https://cdn-icons-png.flaticon.com/32/2983/2983788.png", color: "text-orange-400" }
@@ -90,7 +90,7 @@ export default function Projeler() {
       tech: ["React", "Gatsby", "GraphQL", "Netlify CMS"],
       category: "web",
       duration: "2-3 hafta",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68e2c6474a?w=800&h=600&fit=crop&auto=format&q=90",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop&auto=format&q=90",
       features: ["Proje Galerisi", "Blog Sistemi", "İletişim Formu", "Hızlı Yükleme"],
       icon: "https://cdn-icons-png.flaticon.com/32/3135/3135715.png"
     },

@@ -149,7 +149,7 @@ export default function Blog() {
     { 
       id: 'all', 
       name: t('blog.categories.all.name'), 
-      icon: '📚',
+      icon: 'https://cdn-icons-png.flaticon.com/32/3534/3534033.png',
       gradient: 'from-blue-500 to-cyan-500',
       description: t('blog.categories.all.description'),
       color: 'blue'
@@ -157,7 +157,7 @@ export default function Blog() {
     { 
       id: 'react', 
       name: t('blog.categories.react.name'), 
-      icon: '⚛️',
+      icon: 'https://cdn-icons-png.flaticon.com/32/1126/1126012.png',
       gradient: 'from-purple-500 to-pink-500',
       description: t('blog.categories.react.description'),
       color: 'purple'
@@ -165,7 +165,7 @@ export default function Blog() {
     { 
       id: 'typescript', 
       name: t('blog.categories.typescript.name'), 
-      icon: '🔷',
+      icon: 'https://cdn-icons-png.flaticon.com/32/5968/5968381.png',
       gradient: 'from-indigo-500 to-purple-500',
       description: t('blog.categories.typescript.description'),
       color: 'indigo'
@@ -173,7 +173,7 @@ export default function Blog() {
     { 
       id: 'css', 
       name: t('blog.categories.css.name'), 
-      icon: '🎨',
+      icon: 'https://cdn-icons-png.flaticon.com/32/732/732190.png',
       gradient: 'from-orange-500 to-red-500',
       description: t('blog.categories.css.description'),
       color: 'orange'
@@ -181,7 +181,7 @@ export default function Blog() {
     { 
       id: 'backend', 
       name: t('blog.categories.backend.name'), 
-      icon: '🔧',
+      icon: 'https://cdn-icons-png.flaticon.com/32/2721/2721297.png',
       gradient: 'from-green-500 to-emerald-500',
       description: t('blog.categories.backend.description'),
       color: 'green'
@@ -189,7 +189,7 @@ export default function Blog() {
     { 
       id: 'mobile', 
       name: t('blog.categories.mobile.name'), 
-      icon: '📱',
+      icon: 'https://cdn-icons-png.flaticon.com/32/2991/2991148.png',
       gradient: 'from-pink-500 to-rose-500',
       description: t('blog.categories.mobile.description'),
       color: 'pink'
@@ -197,7 +197,7 @@ export default function Blog() {
     { 
       id: 'devops', 
       name: t('blog.categories.devops.name'), 
-      icon: '🚀',
+      icon: 'https://cdn-icons-png.flaticon.com/32/1336/1336494.png',
       gradient: 'from-indigo-500 to-blue-500',
       description: t('blog.categories.devops.description'),
       color: 'indigo'
@@ -205,7 +205,7 @@ export default function Blog() {
     { 
       id: 'ai', 
       name: t('blog.categories.ai.name'), 
-      icon: '🤖',
+      icon: 'https://cdn-icons-png.flaticon.com/32/8637/8637099.png',
       gradient: 'from-red-500 to-orange-500',
       description: t('blog.categories.ai.description'),
       color: 'red'
@@ -213,7 +213,7 @@ export default function Blog() {
     { 
       id: 'career', 
       name: t('blog.categories.career.name'), 
-      icon: '💼',
+      icon: 'https://cdn-icons-png.flaticon.com/32/3135/3135706.png',
       gradient: 'from-yellow-500 to-amber-500',
       description: t('blog.categories.career.description'),
       color: 'yellow'
@@ -417,10 +417,8 @@ export default function Blog() {
                      style={{backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))`}}></div>
                 
                 <div className="relative z-10 text-center">
-                  <div className="mb-2 sm:mb-3">
-                    <span className="text-2xl sm:text-3xl block">
-                      {category.icon}
-                    </span>
+                  <div className="mb-2 sm:mb-3 flex justify-center">
+                    <img src={category.icon} alt={category.name} className="w-8 h-8 sm:w-10 sm:h-10" />
                   </div>
                   <h3 className="font-bold text-sm sm:text-lg mb-1 sm:mb-2 line-clamp-1">{category.name}</h3>
                   <p className={`text-xs opacity-75 mb-2 sm:mb-3 line-clamp-2 hidden sm:block ${activeCategory === category.id ? 'text-white/80' : 'text-gray-400'}`}>
@@ -491,7 +489,10 @@ export default function Blog() {
                   className="text-center mb-12"
                         >
                   <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-full border border-yellow-500/30 mb-4">
-                    <span className="text-yellow-400 text-sm font-medium">⭐ {t('blog.page.featuredTitle')}</span>
+                    <div className="flex items-center gap-2">
+                      <img src="https://cdn-icons-png.flaticon.com/32/1828/1828884.png" alt="Featured" className="w-4 h-4" />
+                      <span className="text-yellow-400 text-sm font-medium">{t('blog.page.featuredTitle')}</span>
+                    </div>
                   </div>
                   <h2 className="text-4xl font-bold">{t('blog.page.featuredSubtitle')}</h2>
                         </motion.div>
@@ -672,7 +673,9 @@ export default function Blog() {
               variants={fadeInUp}
               className="text-center py-20"
             >
-              <div className="text-6xl mb-6">🔍</div>
+              <div className="mb-6 flex justify-center">
+                <img src="https://cdn-icons-png.flaticon.com/64/3721/3721928.png" alt="No results" className="w-16 h-16 opacity-50" />
+              </div>
               <h3 className="text-2xl font-bold mb-4">{t('blog.page.noResults.title')}</h3>
               <p className="text-gray-400 mb-8 max-w-md mx-auto">
                 {t('blog.page.noResults.description')}
